@@ -28,14 +28,14 @@
                     "NT-999-NX",
                     "Jumptown"
                 ]
-            },
+            }
         ],
         "Hurston" : [
             {
                 "Arial" : [
                     "HDMS-Bezdek",
                     "HDMS-Lathan"
-                ],                
+                ]                
             },
             "Reclamation & Disposal Orinth"
         ],
@@ -48,7 +48,7 @@
                 "Wala" : [
                     "Samson & Son's"
                 ]
-            },
+            }
         ]  
     } 
 }
