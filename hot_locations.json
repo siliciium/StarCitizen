@@ -1,11 +1,11 @@
 {
     "Stanton" : {
         "Microtech" : [
+            "SM0-10", 
+            "SM0-22", 
+            "SM0-18",
+            "Outpost 54",
             {
-                "SM0-10", 
-                "SM0-22", 
-                "SM0-18",
-                "Outpost 54",
                 "Euterpe" : [
                     "Delvin Scrap & Salvage"
                 ],
@@ -31,8 +31,8 @@
             }
         ],
         "Hurston" : [
-            {
-                "Reclamation & Disposal Orinth",
+            "Reclamation & Disposal Orinth",
+            {                
                 "Arial" : [
                     "HDMS-Bezdek",
                     "HDMS-Lathan"
