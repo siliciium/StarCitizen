@@ -1,0 +1,54 @@
+{
+    "Stanton" : {
+        "Microtech" : [
+            {
+                "Euterpe" : [
+                    "Delvin Scrap & Salvage"
+                ],
+                "Calliope" : [
+                    "Raven's Roost"
+                ]
+            },
+            "SM0-10", 
+            "SM0-22", 
+            "SM0-18",
+            "Outpost 54"
+        ],
+        "Crusader" : [
+            {
+                "Daymar" : [
+                    "SCD-1", 
+                    "Nuenwaste",
+                    "Brio's Breaker Yard"
+                ],
+                "Cellin" : [
+                    "PRIVATE PROPERTY"
+                ],
+                "Yela" : [
+                    "NT-999-NX",
+                    "Jumptown"
+                ]
+            },
+        ],
+        "Hurston" : [
+            {
+                "Arial" : [
+                    "HDMS-Bezdek",
+                    "HDMS-Lathan"
+                ],                
+            },
+            "Reclamation & Disposal Orinth"
+        ],
+        "ArcCorp" : [
+            {
+                "Lyria" : [
+                    "The Orphanage",
+                    "Paradise Cove"
+                ],
+                "Wala" : [
+                    "Samson & Son's"
+                ]
+            },
+        ]  
+    } 
+}
