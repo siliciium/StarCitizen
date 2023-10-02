@@ -63,6 +63,13 @@
             "price": 10350
         }
     ],
+    "Gasping Weevil Eggs" : [
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 112500
+        }
+    ],
     "Maze" : [
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
