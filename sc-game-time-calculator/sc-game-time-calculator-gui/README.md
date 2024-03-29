@@ -6,4 +6,4 @@
 `cl /std:c++latest /EHsc /DUNICODE /D_UNICODE /O2 /INCREMENTAL:NO sc-game-time-calculator-gui.cpp sc-game-time-calculator-gui User32.lib Shell32.lib Gdi32.lib`
 
 # USE
-`sc-game-time-calculator-gui`
+`sc-game-time-calculator-gui.exe`
