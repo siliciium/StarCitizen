@@ -3,7 +3,7 @@
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 5750
+            "price": 5360
         },
         {
             "location": "Stanton > Crusader > Daymar",
@@ -40,7 +40,7 @@
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "itemName": "E'tam",
-            "price": 11500
+            "price": 10850
         },
         {
             "location": "Stanton > Crusader > Daymar",
@@ -68,6 +68,21 @@
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
             "price": 112500
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 112500
+        },
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 112500
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 112500
         }
     ],
     "Maze" : [
@@ -89,7 +104,7 @@
         {
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
-            "price": 85604
+            "price": 90000
         },
         {
             "location": "Stanton > microTech > Euterpe",
@@ -99,11 +114,6 @@
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 90000
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "\"No Questions Asked\" Trading Console",
             "price": 90000
         }
     ],
@@ -136,7 +146,7 @@
         {
             "location": "Stanton > Crusader > Yela",
             "shop": "Jumptown",
-            "price": 9000
+            "price": 8990
         },
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
@@ -144,12 +154,7 @@
             "price": 7650
         }
     ],
-    "SLAM" : [
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "\"No Questions Asked\" Trading Console",
-            "price": 18000
-        },
+    "SLAM" : [        
         {
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
@@ -180,32 +185,32 @@
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 14100
+            "price": 13104
         },
         {
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
-            "price": 13613
+            "price": 13612
         },
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 13613
+            "price": 13612
         },
         {
             "location": "Stanton > microTech > Euterpe",
             "shop": "Devlin Scrap & Salvage",
-            "price": 13613
+            "price": 13612
         },
         {
             "location": "Stanton > Hurston",
             "shop": "Reclamation & Disposal Orinth",
-            "price": 13613
+            "price": 13612
         },
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
             "shop": "\"No Questions Asked\" Trading Console",
-            "price": 10575
+            "price": 10574
         }
     ]
 }
