@@ -22,7 +22,7 @@
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 21044.01
+            "price": 21044.0
         }
     ],
     "Laranite":[
@@ -41,12 +41,12 @@
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 2265.01
+            "price": 2265.0
         },
         {
             "location": "Stanton > microTech > Euterpe",
             "shop": "Devlin Scrap & Salvage",
-            "price": 2265.01
+            "price": 2265.0
         },
         {
             "location": "Stanton > Crusader > Daymar",
