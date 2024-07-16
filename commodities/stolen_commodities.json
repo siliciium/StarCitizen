@@ -3,97 +3,62 @@
         {
             "location": "Stanton > Hurston",
             "shop": "Reclamation & Disposal Orinth",
-            "price": 2381.0
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "\"No Questions Asked\" Trading Console",
-            "price": 1429.0
+            "price": 2380.0
         }
     ],
     "Gold":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 6706.0
-        },
-        {
-            "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
-            "shop": "\"No Questions Asked\" Trading Console",
-            "price": 5282.0
-        },
+            "price": 6705.0
+        },        
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 4863.0
-        },
-        {
-            "location": "Stanton > Crusader > Cellin",
-            "shop": "PRIVATE PROPERTY",
-            "price": 4434.0
-        }        
+            "price": 4862.0
+        }       
     ],
     "Quantainium":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 21045.0
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "\"No Questions Asked\" Trading Console",
-            "price": 17200.0
-        },
-        {
-            "location": "Stanton > ArcCorp > Lyria",
-            "shop": "The Orphanage",
-            "price": 11130.0
+            "price": 21044.01
         }
     ],
     "Laranite":[
         {
             "location": "Stanton > ArcCorp > Lyria",
             "shop": "The Orphanage",
-            "price": 2501.0
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "\"No Questions Asked\" Trading Console",
-            "price": 2126.0
+            "price": 2500.0
         }
     ],
     "Agricium":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 2397.0
+            "price": 2396.0
         },
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 2266.0
+            "price": 2265.01
         },
         {
             "location": "Stanton > microTech > Euterpe",
             "shop": "Devlin Scrap & Salvage",
-            "price": 2266.0
+            "price": 2265.01
         },
         {
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
-            "price": 2266.0
+            "price": 2265.0
         }
     ],
     "Diamond":[
         {
             "location": "Stanton > Hurston",
             "shop": "Reclamation & Disposal Orinth",
-            "price": 4160.0
-        },
-        {
-            "location": "Stanton > Crusader > Cellin",
-            "shop": "PRIVATE PROPERTY",
-            "price": 4160.0
+            "price": 4159.0
         }
     ],
     "RMC":
@@ -101,32 +66,27 @@
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 6307.0
+            "price": 12559.0
         },
         {
             "location": "Stanton > Hurston",
             "shop": "Reclamation & Disposal Orinth",
-            "price": 5915.0
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "\"No Questions Asked\" Trading Console",
-            "price": 5670.0
+            "price": 11830.0
         },
         {
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
-            "price": 5460.0
+            "price": 10919.0
         },
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 5005.0
+            "price": 10009.0
         },
         {
             "location": "Stanton > microTech > Euterpe",
             "shop": "Devlin Scrap & Salvage",
-            "price": 4778.0
+            "price": 9555.0
         }
     ]
     
