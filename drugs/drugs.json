@@ -89,32 +89,32 @@
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
             "shop": "\"No Questions Asked\" Trading Console",
-            "price": 90000
+            "price": 225000
         },
         {
             "location": "Stanton > Hurston",
             "shop": "Reclamation & Disposal Orinth",
-            "price": 90000
+            "price": 225000
         },
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 90000
+            "price": 225000
         },
         {
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
-            "price": 90000
+            "price": 225000
         },
         {
             "location": "Stanton > microTech > Euterpe",
             "shop": "Devlin Scrap & Salvage",
-            "price": 90000
+            "price": 225000
         },
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 90000
+            "price": 225000
         }
     ],
     "Neon" : [
