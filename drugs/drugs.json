@@ -67,22 +67,22 @@
         {
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
-            "price": 84600
+            "price": 84375
         },
         {
             "location": "Stanton > Hurston",
             "shop": "Reclamation & Disposal Orinth",
-            "price": 84600
+            "price": 109125
         },
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 84600
+            "price": 90000
         },
         {
             "location": "Stanton > microTech > Euterpe",
             "shop": "Devlin Scrap & Salvage",
-            "price": 84600
+            "price": 112500
         }
     ],
     "Maze" : [
