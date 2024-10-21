@@ -1,1 +1,1 @@
-En `global.ini` optimized for Scanner result
+`En` trad `global.ini` optimized for Scanner result
