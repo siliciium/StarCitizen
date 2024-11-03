@@ -178,5 +178,13 @@
     "Vulture":  {
         "name":  "Drake Vulture",
         "scu":  12
+    },
+    "Zeus-ES":  {
+        "name":  "Zeus-ES",
+        "scu":  32
+    },
+    "Zeus-CL":  {
+        "name":  "Zeus-CL",
+        "scu":  128
     }
 }
