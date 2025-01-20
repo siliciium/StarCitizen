@@ -1,42 +1,182 @@
 {
     "Beryl":[
         {
-            "location": "Stanton > Hurston",
-            "shop": "Reclamation & Disposal Orinth",
-            "price": 2380.0
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "Admin",
+            "price": 2401.0
+        },
+        {
+            "location": "Pyro > Endgame",
+            "shop": "Endgame",
+            "price": 2618.0
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 2596.0
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 2527.0
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",
+            "price": 2481.0
+        },
+        {
+            "location": "Pyro > Gaslight",
+            "shop": "Gaslight",
+            "price": 2481.0
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",
+            "price": 2481.0
+        },
+        {
+            "location": "Pyro > Rat's Nest",
+            "shop": "Rat's Nest",
+            "price": 2481.0
+        },
+        {
+            "location": "Pyro > Megumi Refueling",
+            "shop": "Megumi Refueling",
+            "price": 2412.0
+        },
+        {
+            "location": "Pyro > Monox",
+            "shop": "Checkmate",
+            "price": 2412.0
+        },
+        {
+            "location": " Pyro > Terminus",
+            "shop": "Ruin Station",
+            "price": 2412.0
+        },
+        {
+            "location": "Pyro > Bloom",
+            "shop": "Orbituary",
+            "price": 2412.0
         }
     ],
     "Gold":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 6705.0
+            "price": 5849.0
+        },        
+        {
+            "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+            "shop": "Locker room",
+            "price": 4948.0
         },        
         {
             "location": "Stanton > ArcCorp > Wala",
             "shop": "Samson & Son's Salvage Center",
-            "price": 4862.0
-        }       
+            "price": 4555.0
+        },        
+        {
+            "location": "Pyro > Rat's Nest",
+            "shop": "Rat's Nest",
+            "price": 6019.0
+        },        
+        {
+            "location": "Pyro > Monox",
+            "shop": "Jackson's Swap",
+            "price": 5234.0
+        },        
+        {
+            "location": "Pyro > Pyro V > Ignis",
+            "shop": "Ashland",
+            "price": 5234.0
+        }     
     ],
     "Quantainium":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 21044.0
+            "price": 21376.0
+        },
+        {
+            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+            "shop": "Maintenance Area",
+            "price": 24011.0
+        },
+        {
+            "location": "Pyro > Pyro V > Ignis",
+            "shop": "Ashland",
+            "price": 26719.5
+        },
+        {
+            "location": "Pyro > Terminus",
+            "shop": "Ruin Station",
+            "price": 22712.5
         }
     ],
     "Laranite":[
         {
-            "location": "Stanton > ArcCorp > Lyria",
-            "shop": "The Orphanage",
-            "price": 2500.0
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "Admin",
+            "price": 2449.0
+        },
+        {
+            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+            "shop": "Maintenance Area",
+            "price": 2125.0
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",
+            "price": 2672.0
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 2625.0
+        },
+        {
+            "location": "Pyro > Rat's Nest",
+            "shop": "Rat's Nest",
+            "price": 2531.0
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",
+            "price": 2531.0
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 2531.0
+        },
+        {
+            "location": "Pyro > Gaslight",
+            "shop": "Gaslight",
+            "price": 2531.0
+        },
+        {
+            "location": "Pyro > Endgame",
+            "shop": "Endgame",
+            "price": 2530.0
+        },
+        {
+            "location": "Pyro > Bloom",
+            "shop": "Orbituary",
+            "price": 2461.0
+        },
+        {
+            "location": "Pyro > Terminus",
+            "shop": "Ruin Station",
+            "price": 2461.0
         }
     ],
     "Agricium":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 2396.0
+            "price": 2266.0
         },
         {
             "location": "Stanton > ArcCorp > Wala",
@@ -52,13 +192,68 @@
             "location": "Stanton > Crusader > Daymar",
             "shop": "Brio's Breaker Yard",
             "price": 2265.0
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 2327.0
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",
+            "price": 2225.0
+        },
+        {
+            "location": "Pyro > Rat's Nest",
+            "shop": "Rat's Nest",
+            "price": 2225.0
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 2225.0
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",
+            "price": 2225.0
+        },
+        {
+            "location": "Pyro > Monox",
+            "shop": "Checkmate",
+            "price": 2163.0
+        },
+        {
+            "location": "Pyro > Terminus",
+            "shop": "Ruin Station",
+            "price": 2163.0
+        },
+        {
+            "location": "Pyro > Megumi Refueling",
+            "shop": "Megumi Refueling",
+            "price": 2163.0
         }
     ],
     "Diamond":[
         {
-            "location": "Stanton > Hurston",
-            "shop": "Reclamation & Disposal Orinth",
-            "price": 4159.0
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "Admin",
+            "price": 5169.0
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 5582.0
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 5440.0
+        },
+        {
+            "location": "Pyro > Jackson's Swap",
+            "shop": "Jackson's Swap",
+            "price": 4625.0
         }
     ],
     "RMC":
@@ -66,27 +261,62 @@
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
             "shop": "Admin",
-            "price": 13080.0
+            "price": 9265.0
         },
         {
-            "location": "Stanton > Hurston",
-            "shop": "Reclamation & Disposal Orinth",
-            "price": 11830.0
+            "location": "Pyro > Pyro V > Vatra",
+            "shop": "Seer's Canyon",
+            "price": 11300.0
         },
         {
-            "location": "Stanton > Crusader > Daymar",
-            "shop": "Brio's Breaker Yard",
-            "price": 10919.0
+            "location": "Pyro > Terminus",
+            "shop": "Last Landings",
+            "price": 10800.0
         },
         {
-            "location": "Stanton > ArcCorp > Wala",
-            "shop": "Samson & Son's Salvage Center",
-            "price": 10009.0
+            "location": "Pyro > Pyro V > Ignis",
+            "shop": "Ashland",
+            "price": 10800.0
         },
         {
-            "location": "Stanton > microTech > Euterpe",
-            "shop": "Devlin Scrap & Salvage",
-            "price": 9555.0
+            "location": "Pyro > Rat's Nest",
+            "shop": "Rat's Nest",
+            "price": 10528.0
+        },
+        {
+            "location": "Pyro > Endgame",
+            "shop": "Endgame",
+            "price": 10500.0
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",
+            "price": 10500.0
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 10475.0
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",
+            "price": 10248.0
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 10247.5
+        },
+        {
+            "location": "Pyro > Gaslight",
+            "shop": "Gaslight",
+            "price": 10232.0
+        },
+        {
+            "location": "Pyro > Terminus",
+            "shop": "Ruin Station",
+            "price": 9350.0
         }
     ]
     
