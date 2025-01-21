@@ -57,5 +57,34 @@
                 ]
             }
         ]  
-    } 
+    },
+    "Pyro" : {        
+        "Bloom" : [
+            "Bueno Ravine"
+        ],
+        "Clusters" : [
+            "Cluster BGR-560",
+            "Cluster CAJ-445",
+            "Cluster EMM-567",
+            "Cluster FSN-704",
+            "Cluster GRP-839",
+            "Cluster JWY-925",
+            "Cluster HJS-232",
+            "Cluster KKE-717",
+            "Cluster LHB-976",
+            "Cluster MNK-833",
+            "Cluster NDB-102",
+            "Cluster PQE-291",
+            "Cluster RSC-340",
+            "Cluster SGL-693",
+            "Cluster SZA-178",
+            "Cluster TYS-908",
+            "Cluster VUP-613",
+            "Cluster WDH-387",
+            "Cluster YKA-011",
+        ],
+        "Terminus" : [
+            "Dudley & Daughters"
+        ]
+    }
 }
