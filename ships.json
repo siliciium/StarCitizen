@@ -167,6 +167,10 @@
         "name":  "Greycat ROC-DS",
         "scu":  4
     },
+    "Starlancer MAX":{
+        "name" : "Starlancer MAX",
+        "scu" : 224
+    },
     "Titan":  {
         "name":  "Avenger Titan",
         "scu":  8
