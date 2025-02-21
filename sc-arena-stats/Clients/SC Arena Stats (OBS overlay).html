@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- https://game-icons.net/1x1/skoll/burning-skull.html -->
+
+    <title>SC Arena Stats (OBS overlay)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            color: #8bcafa;
+            background-color: #14283aff;
+            font-family: "Electrolize", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .killfeed{
+            max-width: 40px; width:40px; padding-left:6px; padding-bottom: 5px; padding-top: 5px;
+        }
+        .killfeed svg{
+            transform: scale(0.8);
+        }
+        .killfeed-entry{
+            color: #568eaf;
+        }
+        .table {            
+            --bs-table-color-type: initial;
+            --bs-table-bg-type: initial;
+            --bs-table-color-state: initial;
+            --bs-table-bg-state: initial;
+            --bs-table-color: #9dcafa;
+            --bs-table-bg: #18283a;
+            --bs-table-border-color: #263e59;
+            --bs-table-accent-bg: transparent;
+            --bs-table-striped-color: var(--bs-emphasis-color);
+            --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
+            --bs-table-active-color: var(--bs-emphasis-color);
+            --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
+            --bs-table-hover-color: #c9e0fd;
+            --bs-table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.075);
+            width: 100%;
+            margin-bottom: 1rem;
+            vertical-align: top;
+            border-color: var(--bs-table-border-color);
+        }
+        .table>:not(caption)>*>* {
+            background-color: transparent;
+        }
+        .leaderboard-entry{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #killfeed > tbody > tr > td:nth-child(1){
+            text-align: right;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!--<br>-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col-lg-auto">
+                <div id="messages"></div>
+            </div>
+        </div>
+
+        <!--<h2>LEADERBOARD</h2>-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col-lg-auto">
+                <div class="container-fluid">
+                    <table class="table-responsive table-hover" id="leaderboard">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>            
+                </div>
+            </div>
+        </div>
+                
+        <!--<h2>KILLFEED</h2>-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col-lg-auto">
+                <div class="container-fluid">
+                    <table class="table-responsive table-hover" id="killfeed">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div><!--container-->
+    
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+
+        const ws_addr = "ws://localhost:8118/";
+        
+        const leaderboard_filter_players = ["siIicium"];        
+        const leaderboard_display        = true;
+        const leaderboard_updateTimeMs   = 10000;
+
+        const killfeed_display           = true;
+        const killfeed_filter_players    = ["siIicium"];
+        const killfeed_updateTimeMs      = 10000;    
+        const killfeed_include_suicide   = false;
+        const killfeed_include_crash     = false;
+        const killfeed_limit_entries     = 25;     // 3440x1440
+
+
+        const INFO_SVG    = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill="#92cbfa" d="M 12 0 C 5.925781 0 1 4.476563 1 10 C 1 15.523438 5.925781 20 12 20 L 12 24 C 12 24 23 18.640625 23 10 C 23 4.476563 18.074219 0 12 0 Z M 13.222656 15.125 L 10.777344 15.125 L 10.777344 8.160156 L 13.222656 8.160156 Z M 12.003906 6.199219 C 10.679688 6.199219 10.671875 5.222656 10.671875 4.996094 C 10.671875 4.765625 10.671875 3.800781 12.003906 3.800781 C 13.339844 3.800781 13.335938 4.765625 13.335938 4.996094 C 13.335938 5.222656 13.328125 6.199219 12.003906 6.199219 Z"/></svg>`;
+        const SUICIDE_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 30px; width: 30px;"><polygon points="437.02,437.02,256,512,74.98,437.02,0,256,74.98,74.98,256,0,437.02,74.98,512,256" fill="#000000" fill-opacity="0"></polygon><g class="" transform="translate(0,0)" style=""><path d="M23.094 20.125L84.156 77.78 44.28 105.563 127 176.594c3.655-16.908 11.556-32.517 22.688-46.125l-41.375-33.345 26.593-27.813L23.094 20.126zm473.094 2.938L438.53 84.156 410.75 44.25l-50.438 58.72c14.366 9.26 26.63 20.68 36 33.75l22.875-28.407L447 134.905l49.188-111.844zM268.344 95.97c-70.046 1.018-124.938 47.628-124.938 102.155 0 25.662 12.01 49.232 32.188 67.438l2.937 2.625.126 3.937 2.375 61.5c4.54 2.58 14.774 7.882 29.75 12.625v-40.72h18.69v45.626c10.157 2.127 21.678 3.707 34.405 4.188v-42.156h18.688v42.03c13.336-.665 25.14-2.53 35.312-4.937v-44.75h18.688v39.25c11.83-4.243 19.824-8.66 23.656-10.967l1.78-60.938.125-4.03 3-2.69c20.67-18.317 32.78-41.973 32.78-67.936 0-55.138-56.05-102.25-127.25-102.25h-2.31zm-77.344 89c23.367-.295 58.375 18.53 58.375 18.53 0 21.772-17.665 39.438-39.438 39.438-21.79 0-39.406-17.666-39.406-39.438.418-13.68 9.058-18.388 20.47-18.53zm159.375 0c11.412.142 20.052 4.85 20.47 18.53 0 21.772-17.635 39.438-39.408 39.438-21.772 0-39.437-17.666-39.437-39.438 0 0 35.008-18.825 58.375-18.53zm-79.75 48.25l20.344 45.405h-40.69l20.345-45.406zm108.813 82.31l-.688 23.94-.125 4.717-3.906 2.688s-11.47 7.87-31.814 15.156l24.406 20.94-34.218 35.75 160.125 77.717-94.814-88.593 51.28-35.75-70.248-56.563zM97.594 333.126l-77.72 160.063 88.595-94.782 35.75 51.28 67.56-83.873c-28.16-7.978-44.936-18.782-44.936-18.782l-4.094-2.624-.188-4.844-.218-6.03-29 33.75-35.75-34.157z" fill="#92cbfa" fill-opacity="1"></path></g></svg>`;
+        const KILL_SVG    = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 30px; width: 30px;"><polygon points="437.02,437.02,256,512,74.98,437.02,0,256,74.98,74.98,256,0,437.02,74.98,512,256" fill="#000000" fill-opacity="0"></polygon><g class="" transform="translate(0,0)" style=""><path d="M376 76c30 60-120 30-210 75 150 0 270 15 270 105S316 361 166 361c90 45 240 15 210 75 90-15 120-120 120-180S466 91 376 76zm-95.625 105.938C216.005 182.577 127.562 203.5 16 256c255 120 390 75 390 0 0-42.188-42.865-74.886-125.625-74.063z" fill="#92cbfa" fill-opacity="1"></path></g></svg>`;
+        const CRASH_SVG   = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 30px; width: 30px;"><polygon points="437.02,437.02,256,512,74.98,437.02,0,256,74.98,74.98,256,0,437.02,74.98,512,256" fill="#000000" fill-opacity="0"></polygon><g class="" transform="translate(0,0)" style=""><path d="M340.625 18.438l-42.438 104.657-39.562-99.938L213.25 157l-75.97-54.78 14.22 92.53L24.53 27l108.095 202.032-72.094-36.344 59.532 171.188-88.906-12.53 55.25 72.06-52.47-12.03 103.626 78.75 1.875 2.47h240.188l110.28-151.376-52.03 5.468 56.406-67.562-71.718 36.03L459.97 203.22l-54.783 24.625-88.75 67.843 54.282-78.25 18.936-116.343-57.75 37.562 8.72-120.22zM310.312 204.25L296.72 317.127l82.53-21.5-59.47 57.625L376.907 395l-77.437-12.905 36.092 75.75-67-39.313-40.593 50.375-3.72-57.97-70.063 5.783 70.063-37.313-77.53-79.28 75.124 18.56-8.375-84.75 51.405 87.5 45.437-117.186z" fill="#92cbfa" fill-opacity="1"></path></g></svg>`;
+        const DEATH_SVG   = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 30px; width: 30px;"><polygon points="437.02,437.02,256,512,74.98,437.02,0,256,74.98,74.98,256,0,437.02,74.98,512,256" fill="#000000" fill-opacity="0"></polygon><g class="" transform="translate(0,0)" style=""><path d="M268.725 389.28l3.74 28.7h-30.89l3.74-28.7a11.705 11.705 0 1 1 23.41 0zm33.84-71.83a29.5 29.5 0 1 0 29.5 29.5 29.5 29.5 0 0 0-29.51-29.5zm-94.4 0a29.5 29.5 0 1 0 29.5 29.5 29.5 29.5 0 0 0-29.51-29.5zm245.71-62c0 98.2-48.22 182.68-117.39 220.24-46 28.26-112.77 28.26-156.19 2.5-71.72-36.21-122.17-122.29-122.17-222.73 0-78.16 30.54-147.63 77.89-191.67 0 0-42.08 82.86 9.1 135-11.67-173.77 169.28-63 118-184 151.79 83.33 9.14 105 84.1 148.21 0 0 66.21 47 36.4-91.73 42.95 43.99 70.25 110.3 70.25 184.19zm-68.54 29.87c-2.45-65.49-54.88-119.59-120.26-124.07-3.06-.21-6.15-.31-9.16-.31a129.4 129.4 0 0 0-129.43 129.35 132.15 132.15 0 0 0 24.51 76v25a35 35 0 0 0 34.74 34.69h6.26v16.61a34.66 34.66 0 0 0 34.71 34.39h61.78a34.48 34.48 0 0 0 34.51-34.39v-16.61h5.38a34.89 34.89 0 0 0 34.62-34.75v-28a129.32 129.32 0 0 0 22.33-77.9z" fill="#92cbfa" fill-opacity="1"></path></g></svg>`;
+        const KD_SVG      = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 30px; width: 30px;"><polygon points="437.02,437.02,256,512,74.98,437.02,0,256,74.98,74.98,256,0,437.02,74.98,512,256" fill="#000000" fill-opacity="0"></polygon><g class="" transform="translate(0,0)" style=""><path d="M240 16 112 272l72.8 53 55-37.1L192 256zm32 0 48 240-144 96-64 48 144 96 144-96-64-48-8.2-5.4-56.5 41.2L288 400l-32 32-32-32 176-128z" fill="#92cbfa" fill-opacity="1"></path></g></svg>`;
+
+        var killfeed_displayed_entries = 0;
+
+        if(!leaderboard_display){
+            document.querySelector(`#leaderboard`).parentElement.remove();
+        }
+
+        if(!killfeed_display){
+            document.querySelector(`#killfeed`).parentElement.remove();
+        }else{
+            if(leaderboard_display){
+                document.querySelector(`#killfeed`).style.marginTop = "1.8em";
+            }
+        }
+
+
+        console.log(`WebSocket connecting to ${ws_addr} ...`);
+        let socket = new WebSocket(ws_addr);
+
+        socket.onopen = function(event) {
+            console.log(`WebSocket ${ws_addr} is open now.`);
+            //displayMessage(`WebSocket ${ws_addr} is open now.`);
+            document.querySelector(`#messages`).remove();
+
+            if(leaderboard_display){
+                socket.send("/leaderboard");
+                if(leaderboard_updateTimeMs !== 0){
+                    var leaderboard_interval = setInterval(() => {
+                        if (socket.readyState !== WebSocket.CLOSED) {
+                            socket.send("/leaderboard");
+                        }else{
+                            clearInterval(leaderboard_interval);
+                        }
+                    }, leaderboard_updateTimeMs);
+                }
+            }
+            
+            if(killfeed_display){
+                socket.send("/killfeed");
+                if(killfeed_updateTimeMs !== 0){                
+                    var killfeed_interval = setInterval(() => {
+                        if (socket.readyState !== WebSocket.CLOSED) {
+                            socket.send("/killfeed");
+                        }else{
+                            clearInterval(killfeed_interval);
+                        }
+                    }, killfeed_updateTimeMs);
+                }
+            }
+                        
+        };
+
+        socket.onmessage = function(event) {
+            //console.log("Received: " + event.data);
+            //displayMessage("Received: " + event.data);
+
+            let json = JSON.parse(event.data);
+            console.log(json);
+
+            if(json.hasOwnProperty("leaderboard")){
+                Parseleaderboard(json);
+            }
+
+            if(json.hasOwnProperty("killfeed")){
+                ParseKillfeed(json);
+            }
+        };
+
+        socket.onclose = function(event) {
+            console.log("WebSocket is closed now.");
+            //displayMessage("WebSocket is closed now.");
+        };
+
+        socket.onerror = function(error) {
+            console.error("WebSocket error observed:", error);
+            displayMessage("Unable to connect !");
+            
+        };
+
+        
+
+        function displayMessage(message) {
+            let messagesDiv = document.getElementById("messages");
+            messagesDiv.innerHTML = `${INFO_SVG} ${message}`;
+        }
+
+        function calculateKD(kills, deaths) {
+            if (deaths === 0) {
+                return kills*1.0; // to avoid division by zero
+            }
+            return (kills / deaths)*1.0;
+        }
+
+        function deleteAllRows(id) {
+            // Get the table body
+            var tbody = document.querySelector(`#${id} > tbody`);
+            // Remove all child nodes (rows) from the tbody
+            if(null != tbody){
+                let entries = document.querySelectorAll(`#${id} > tbody > tr`);
+                entries.forEach(function(entry) {
+                    entry.parentNode.removeChild(entry);
+                });
+            }                        
+        }
+
+        function playerExistsInTable(id, player) {
+            let exists = undefined;
+            // Get the table body
+            var tbody = document.querySelector(`#${id} > tbody`);
+            // Remove all child nodes (rows) from the tbody
+            if(null != tbody){
+                let entries = document.querySelectorAll(`#${id} > tbody > tr`);
+                entries.forEach(function(entry) {
+                    if(entry.firstChild.innerText === player){
+                        exists = entry;
+                    }
+                });
+            } 
+            
+            return exists;
+        }
+
+        function Parseleaderboard(json){            
+            Object.keys(json["leaderboard"]).map(k => { 
+                                
+                let player  = k;
+                let kill    = json["leaderboard"][k]["kill"];
+                let death   = json["leaderboard"][k]["death"];
+                let suicide = json["leaderboard"][k]["suicide"];
+                let crash   = json["leaderboard"][k]["crash"];
+                let kd      = calculateKD(kill, death).toFixed(2)
+
+                if( leaderboard_filter_players.length > 0 ){
+                    if(leaderboard_filter_players.includes(player)){
+                        UpdateLeaderBoard(player, kill, death, suicide, crash, kd);
+                    }                    
+                }else{
+                    UpdateLeaderBoard(player, kill, death, suicide, crash, kd);
+                }
+                                            
+            });
+        }
+
+        function UpdateLeaderBoard(player, kill, death, suicide, crash, kd){
+            let tr = playerExistsInTable("leaderboard", player);            
+
+            if(tr !== undefined){
+                if(tr.childNodes[1].innerText.trim() !== `${kill}`){
+                    tr.childNodes[1].innerHTML = `${KILL_SVG} ${kill}`;
+                    console.log("UPDATE", player, "KILL");
+                }
+                if(tr.childNodes[2].innerText.trim() !== `${death}`){
+                    tr.childNodes[2].innerHTML = `${DEATH_SVG} ${death}`;
+                    console.log("UPDATE", player, "DEATH");
+                }
+                if(tr.childNodes[3].innerText.trim() !== `${suicide}`){
+                    tr.childNodes[3].innerHTML = `${SUICIDE_SVG} ${suicide}`;
+                    console.log("UPDATE", player, "SUICIDE");
+                }
+                if(tr.childNodes[4].innerText.trim() !== `${crash}`){
+                    tr.childNodes[4].innerHTML = `${CRASH_SVG} ${crash}`;
+                    console.log("UPDATE", player, "CRASH");
+                }
+                if(tr.childNodes[5].innerText.trim() !== `${kd}`){
+                    tr.childNodes[5].innerHTML = `${KD_SVG} ${kd}`;
+                    console.log("UPDATE", player, "KD");
+                }
+                
+            }else{
+                let tb = document.querySelector("#leaderboard > tbody");
+                let newRow = tb.insertRow();
+                let newCell1 = newRow.insertCell();
+                let newCell2 = newRow.insertCell();
+                let newCell3 = newRow.insertCell();
+                let newCell4 = newRow.insertCell();
+                let newCell5 = newRow.insertCell();
+                let newCell6 = newRow.insertCell();
+                
+                newCell1.innerHTML = `${player}`;                
+                newCell2.innerHTML = `${KILL_SVG} ${kill}`;
+                newCell2.className = "leaderboard-entry";
+                newCell3.innerHTML = `${DEATH_SVG} ${death}`;
+                newCell3.className = "leaderboard-entry";
+                newCell4.innerHTML = `${SUICIDE_SVG} ${suicide}`;
+                newCell4.className = "leaderboard-entry";
+                newCell5.innerHTML = `${CRASH_SVG} ${crash}`;
+                newCell5.className = "leaderboard-entry";
+                newCell6.innerHTML = `${KD_SVG} ${kd}`;
+
+            }
+        }
+
+        function ParseKillfeed(json){
+            deleteAllRows("killfeed");
+
+            killfeed_displayed_entries = 0;
+
+            json["killfeed"].reverse().map(o => { 
+                
+                let killer = o["Key"];
+                let victim = o["Value"];
+
+                let type = 0;
+                if(killer === "unknown"){
+                    type = 1; // crash
+                }else if(killer === victim){
+                    type = 2; // suicide
+                }
+
+                if( killfeed_filter_players.length > 0 ){
+                    if(killfeed_filter_players.includes(killer) || killfeed_filter_players.includes(victim)){                        
+                        UpdateKillFeed(killer, victim, type);
+                    }
+                }else{
+                    UpdateKillFeed(killer, victim, type);
+                }
+                
+            });
+        }
+
+        function UpdateKillFeed(killer, victim, type){
+
+            let display = true;
+
+            var icon = KILL_SVG;
+            switch(type){
+                case 1:{ // crash
+                    if(!killfeed_include_crash){ display = false; }
+                    killer = "";
+                    icon = CRASH_SVG;
+                    break;
+                }
+                case 2:{ // suicide
+                    if(!killfeed_include_suicide){ display = false; }
+                    killer = "";
+                    icon = SUICIDE_SVG;
+                    break;
+                }
+                default:{
+                    break;
+                }
+            }
+
+            if( (killfeed_limit_entries > 0) && (killfeed_displayed_entries === killfeed_limit_entries)){
+                display = false;
+            }
+
+            if(display){
+                let tb = document.querySelector("#killfeed > tbody");
+                let newRow = tb.insertRow();
+                let newCell1 = newRow.insertCell();
+                let newCell2 = newRow.insertCell();
+                let newCell3 = newRow.insertCell();
+                let n1 = document.createTextNode(killer);
+                let n3 = document.createTextNode(victim);                
+                
+                newRow.className="killfeed-entry";
+
+                newCell1.appendChild(n1);
+                newCell2.className="killfeed";
+                newCell2.innerHTML = icon;                
+                newCell3.appendChild(n3);
+
+                killfeed_displayed_entries++;
+            }
+        }
+
+
+
+}, false); // DOMContentLoaded
+
+    </script>
+</body>
+</html>
