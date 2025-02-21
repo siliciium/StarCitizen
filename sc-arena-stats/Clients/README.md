@@ -41,7 +41,8 @@ const killfeed_limit_entries     = 25;     // 3440x1440
 
 # SC Arena Stats (Simple example)
 
-![image](https://github.com/user-attachments/assets/3e65752d-797f-4aa8-9d83-2952be062d3d)
+![image](https://github.com/user-attachments/assets/fb27c21f-4127-4b83-9aa7-b3ac25e30a74)
+
 
 *Config available :*
 ```js
