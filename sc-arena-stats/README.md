@@ -7,7 +7,7 @@
 
 # SC Arena Stats (HUD)
 
-![image](https://github.com/user-attachments/assets/5b8b1a94-ce90-4661-8665-05352f420c94)
+![image](https://github.com/user-attachments/assets/c793db94-268b-4881-81d7-15d45e7fb71b)
 
 # SC Arena Stats (OBS overlay)
 
