@@ -21,7 +21,7 @@ const killfeed_include_crash     = false;
 
 # SC Arena Stats (OBS overlay)
 
-![image](https://github.com/user-attachments/assets/a2060ad5-3ba4-4343-982d-8cb44afa6bba)
+![image](https://github.com/user-attachments/assets/a20d7ee3-9023-4cfc-a482-e5e56864a0be)
 
 *Config available :*
 ```js
