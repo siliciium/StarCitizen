@@ -1,4 +1,4 @@
-# SC Arena Stats (HUD) example
+# SC Arena Stats (HUD)
 
 ![image](https://github.com/user-attachments/assets/5b8b1a94-ce90-4661-8665-05352f420c94)
 
@@ -19,7 +19,7 @@ const killfeed_include_suicide   = false;
 const killfeed_include_crash     = false;
 ```
 
-# SC Arena Stats (OBS overlay) example
+# SC Arena Stats (OBS overlay)
 
 ![image](https://github.com/user-attachments/assets/a2060ad5-3ba4-4343-982d-8cb44afa6bba)
 
@@ -39,7 +39,7 @@ const killfeed_include_crash     = false;
 const killfeed_limit_entries     = 25;     // 3440x1440
 ```
 
-# SC Arena Stats (Simple example) example
+# SC Arena Stats (Simple example)
 
 ![image](https://github.com/user-attachments/assets/3e65752d-797f-4aa8-9d83-2952be062d3d)
 
