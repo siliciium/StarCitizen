@@ -3,7 +3,7 @@
 *This program is not affiliated with the Cloud Imperium group of companies. All content on this site not authored by its host or users are property of their respective owners. Star Citizen®, Roberts Space Industries® and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC*
 
 # Presentation
-This program opens a Star Citizen log file and retrieves data for `CActor::Kill` ​​and maintains a list of `Kills,Deaths,Suicides` and `Crashes`. When you press `Open` a websocket server is started on port `8118` (can be changed in `MainWindow.xaml..cs`). The server can be queried at any time via a websocket client. The program continuously reads the file to retrieve new entries, you must press `Stop` to stop reading the file and the websocket server.
+This program opens a Star Citizen log file and retrieves data for `CActor::Kill` ​​and maintains a list of `Kills,Deaths,Suicides` and `Crashes`. When you press `Open` a websocket server is started on port `8118` (can be changed in `MainWindow.xaml.cs`). The server can be queried at any time via a websocket client. The program continuously reads the file to retrieve new entries, you must press `Stop` to stop reading the file and the websocket server.
 
 The websocket server responds to the following messages:
 `/leaderboard` and `/killfeed` 
