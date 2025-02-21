@@ -11,7 +11,7 @@
 
 # SC Arena Stats (OBS overlay)
 
-![image](https://github.com/user-attachments/assets/a2060ad5-3ba4-4343-982d-8cb44afa6bba)
+![image](https://github.com/user-attachments/assets/0725530e-7a53-43d9-9100-c129b6ab68b9)
 
 # SC Arena Stats (Simple example)
 
