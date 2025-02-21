@@ -15,4 +15,5 @@
 
 # SC Arena Stats (Simple example)
 
-![image](https://github.com/user-attachments/assets/3e65752d-797f-4aa8-9d83-2952be062d3d)
+![image](https://github.com/user-attachments/assets/d4429309-7c0c-4dee-84d8-8ad61e92017f)
+
