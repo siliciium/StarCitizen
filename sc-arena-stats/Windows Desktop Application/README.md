@@ -5,6 +5,9 @@
 # Presentation
 This program opens a Star Citizen log file and retrieves data for `CActor::Kill` ​​and maintains a list of `Kills,Deaths,Suicides` and `Crashes`. When you press `Open` a websocket server is started on port `8118` (can be changed in MainWindow.cs). The server can be queried at any time via a websocket client. The program continuously reads the file to retrieve new entries, you must press `Stop` to stop reading the file and the websocket server.
 
+The websocket server responds to the following messages:
+`/leaderboard` and `/killfeed`
+
 # Required Tools and Font
 
 - [Visual Studio Community](https://visualstudio.microsoft.com/fr/vs/) (Install)
