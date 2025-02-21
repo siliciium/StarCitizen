@@ -54,7 +54,7 @@ At this step you need to have :
 ![image](https://github.com/user-attachments/assets/3800ae5a-d3d2-4ac7-8d07-22dc2c4e6c90)
 
 
-**8-** Now you can run the programm by clicking on green arrow (Start/Démarrer)
+**8-** Now you can run the program by clicking on green arrow (Start/Démarrer)
 
 ![image](https://github.com/user-attachments/assets/42f38d6e-9ecf-4e1e-a93b-cd2b259a3d3c)
 
