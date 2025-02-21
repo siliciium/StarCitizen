@@ -1,6 +1,6 @@
 # SC Arena Stats (HUD)
 
-![image](https://github.com/user-attachments/assets/5b8b1a94-ce90-4661-8665-05352f420c94)
+![image](https://github.com/user-attachments/assets/b833faa9-2fca-473b-a5aa-a3fcbed463d6)
 
 *Config available :*
 ```js
