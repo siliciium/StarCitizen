@@ -1,0 +1,384 @@
+{
+    "300i":  {
+        "name":  "ORIGIN 300i",
+        "scu":  8,
+        "boxes" : {
+            "4" : 2
+        }
+    },
+    "315p":  {
+        "name":  "ORIGIN 315p",
+        "scu":  12,
+        "boxes" : {
+            "4" : 3
+        }
+    },
+    "325a":  {
+        "name":  "ORIGIN 325a",
+        "scu":  4,
+        "boxes" : {
+            "4" : 1
+        }
+    },
+    "350r":  {
+        "name":  "ORIGIN 350r",
+        "scu":  4,
+        "boxes" : {
+            "4" : 1
+        }
+    },
+    "400i":  {
+        "name":  "ORIGIN 400i",
+        "scu":  42,
+        "boxes" : {
+            "24" : 1,
+            "2"  : 8,
+            "1"  : 2
+        }
+    },
+    "600i Explorer":  {
+        "name":  "ORIGIN 600i Explorer",
+        "scu":  44,
+        "boxes" : {
+            "2"  : 20,
+            "1"  : 4
+        }
+    },
+    "600i Touring":  {
+        "name":  "ORIGIN 600i Touring",
+        "scu":  20,
+        "boxes" : {
+            "2"  : 8,
+            "1"  : 4
+        }
+    },
+    "890 Jump":  {
+        "name":  "ORIGIN 890 Jump",
+        "scu":  388,
+        "boxes" : {
+            "32" : 6,
+            "24" : 4,
+            "16" : 2,
+            "2"  : 28,
+            "1"  : 12
+        }
+    },
+    "A1":  {
+        "name":  "CRUSADER A1 Spirit",
+        "scu":  0
+    },
+    "A2":  {
+        "name":  "CRUSADER A2 Hercules Starlifter",
+        "scu":  216,
+        "boxes" : {
+            "32" : 6,
+            "24" : 1
+        }
+    },
+    "Aurora CL":  {
+        "name":  "RSI Aurora CL",
+        "scu":  6,
+        "boxes" : {
+            "2" : 3
+        }
+    },
+    "C1":  {
+        "name":  "CRUSADER C1 Spirit",
+        "scu":  64,
+        "boxes" : {
+            "32" : 2
+        }
+    },
+    "C2":  {
+        "name":  "CRUSADER C2 Hercules Starlifter",
+        "scu":  696,
+        "boxes" : {
+            "32" : 20,
+            "2" : 28
+        }
+    },
+    "C8":  {
+        "name":  "ANVIL C8 Pisces",
+        "scu":  4,
+        "boxes" : {
+            "2" : 2
+        }
+    },
+    "C8X":  {
+        "name":  "ANVIL C8 Pisces Expedition",
+        "scu":  4,
+        "boxes" : {
+            "2" : 2
+        }
+    },
+    "Carrack":  {
+        "name":  "ANVIL Carrack",
+        "scu":  456,
+        "boxes" : {
+            "16" : 24,
+            "8" : 6,
+            "2" : 2
+        }
+    },
+    "Carrack Expedition":  {
+        "name":  "ANVIL Carrack Expedition",
+        "scu":  456,
+        "boxes" : {
+            "16" : 24,
+            "8" : 6,
+            "2" : 2
+        }
+    },
+    "Caterpillar":  {
+        "name":  "DRAKE Caterpillar",
+        "scu":  576,
+        "boxes" : {
+            "24" : 16,
+            "16" : 3,
+            "4" : 4,
+            "2" : 56,
+            "1" : 16
+        }
+    },
+    "Caterpillar Pirate":  {
+        "name":  "DRAKE Caterpillar Pirate",
+        "scu":  576,
+        "boxes" : {
+            "24" : 16,
+            "16" : 3,
+            "4" : 4,
+            "2" : 56,
+            "1" : 16
+        }
+    },
+    "Constellation Andromeda":  {
+        "name":  "RSI Constellation Andromeda",
+        "scu":  96,
+        "boxes" : {
+            "32" : 2,
+            "4" : 8
+        }
+    },
+    "Constellation Aquila":  {
+        "name":  "RSI Constellation Aquila",
+        "scu":  96,
+        "boxes" : {
+            "32" : 2,
+            "4" : 8
+        }
+    },
+    "Constellation Taurus":  {
+        "name":  "RSI Constellation Taurus",
+        "scu":  174,
+        "boxes" : {
+            "32" : 2,
+            "24" : 2,
+            "4" : 14,
+            "2" : 3
+        }
+    },
+    "Constellation Phoenix":  {
+        "name":  "RSI Constellation Phoenix",
+        "scu":  80,
+        "boxes" : {
+            "32" : 2,
+            "2" : 8
+        }
+    },
+    "Corsair":  {
+        "name":  "DRAKE Corsair",
+        "scu":  72,
+        "boxes" : {
+            "24" : 2,
+            "4" : 6
+        }
+    },
+    "Cutlass Black":  {
+        "name":  "DRAKE Cutlass Black",
+        "scu":  46,
+        "boxes" : {
+            "16" : 2,
+            "2" : 6,
+            "1" : 2
+        }
+    },
+    "Cutlass Blue":  {
+        "name":  "DRAKE Cutlass Blue",
+        "scu":  12,
+        "boxes" : {
+            "2" : 4,
+            "1" : 4
+        }
+    },
+    "Cutlass Red":  {
+        "name":  "DRAKE Cutlass Red",
+        "scu":  12,
+        "boxes" : {
+            "2" : 4,
+            "1" : 4
+        }
+    },
+    "Cutter":  {
+        "name":  "DRAKE Cutter",
+        "scu":  4,
+        "boxes" : {
+            "1" : 4
+        }
+    },
+    "Fortune":  {
+        "name":  "MISC Fortune",
+        "scu":  16,
+        "boxes" : {
+            "1" : 16
+        }
+    },
+    "Freelancer":  {
+        "name":  "MISC Freelancer",
+        "scu":  66,
+        "boxes" : {
+            "32" : 1,
+            "4" : 4,
+            "2" : 9
+        }
+    },
+    "Freelancer DUR":  {
+        "name":  "MISC Freelancer DUR",
+        "scu":  36,
+        "boxes" : {
+            "16" : 1,
+            "4" : 2,
+            "2" : 6
+        }
+    },
+    "Freelancer MAX":  {
+        "name":  "MISC Freelancer MAX",
+        "scu":  120,
+        "boxes" : {
+            "32" : 2,
+            "4" : 8,
+            "2" : 12
+        }
+    },
+    "Freelancer MIS":  {
+        "name":  "MISC Freelancer MIS",
+        "scu":  36,
+        "boxes" : {
+            "16" : 1,
+            "4" : 2,
+            "2" : 6
+        }
+    },
+    "Hull A":  {
+        "name":  "MISC Hull A",
+        "scu":  64,
+        "boxes" : {
+            "16" : 4
+        }
+    },
+    "Hull C":  {
+        "name":  "MISC Hull C",
+        "scu":  4608,
+        "boxes" : {
+            "32" : 144
+        }
+    },
+    "M2":  {
+        "name":  "CRUSADER M2 Hercules Starlifter",
+        "scu":  468,
+        "boxes" : {
+            "32" : 10,
+            "4" : 40,
+            "2" : 21
+        }
+    },
+    "MSR":  {
+        "name":  "CRUSADER Mercury Star Runner",
+        "scu":  114,
+        "boxes" : {
+            "24" : 3,
+            "4" : 9,
+            "2" : 2,
+            "1" : 2
+        }
+    },
+    "Nomad":  {
+        "name":  "C.O Nomad",
+        "scu":  24,
+        "boxes" : {
+            "16" : 1,
+            "2" : 4
+        }
+    },
+    "Polaris":  {
+        "name":  "RSI Polaris",
+        "scu":  576,
+        "boxes" : {
+            "32" : 12,
+            "24" : 8
+        }
+    },
+    "Raft":  {
+        "name":  "ARGO Raft",
+        "scu":  96,
+        "boxes" : {
+            "32" : 3
+        }
+    },
+    "Reclaimer":  {
+        "name":  "AEGIS Reclaimer",
+        "scu":  420,
+        "boxes" : {
+            "16" : 10,
+            "8" : 8,
+            "4" : 8,
+            "2" : 72,
+            "1" : 20
+        }
+    },
+    "Starlancer MAX":{
+        "name" : "MISC Starlancer MAX",
+        "scu" : 224,
+        "boxes" : {
+            "32" : 6,
+            "4" : 8
+        }
+    },
+    "Titan":  {
+        "name":  "AEGIS Avenger Titan",
+        "scu":  8,
+        "boxes" : {
+            "4" : 2
+        }
+    },
+    "Titan Renegade":  {
+        "name":  "AEGIS Avenger Titan Renegade",
+        "scu":  8,
+        "boxes" : {
+            "4" : 2
+        }
+    },
+    "Vulture":  {
+        "name":  "DRAKE Vulture",
+        "scu":  12,
+        "boxes" : {
+            "8" : 1,
+            "2" : 2
+        }
+    },
+    "Zeus-ES":  {
+        "name":  "RSI Zeus-ES",
+        "scu":  32,
+        "boxes" : {
+            "16" : 2
+        }
+    },
+    "Zeus-CL":  {
+        "name":  "RSI Zeus-CL",
+        "scu":  128,
+        "boxes" : {
+            "32" : 2,
+            "4" : 8,
+            "2" : 16
+        }
+    }
+}
