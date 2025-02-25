@@ -65,7 +65,8 @@
     },
     "A1":  {
         "name":  "CRUSADER A1 Spirit",
-        "scu":  0
+        "scu":  0,
+        "boxes" : {}
     },
     "A2":  {
         "name":  "CRUSADER A2 Hercules Starlifter",
