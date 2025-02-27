@@ -2,7 +2,7 @@
     "Altruciatoxin" : [
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 4173
         },
         {
@@ -84,7 +84,7 @@
         },
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
-            "shop": "Locker room",
+            "shop": "CRU-L4 Locker",
             "price": 9423
         },
         {
@@ -146,7 +146,7 @@
         },
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 18451
         },
         {
@@ -158,12 +158,12 @@
     "Maze" : [
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
-            "shop": "Locker room",
+            "shop": "CRU-L4 Locker",
             "price": 181700
         },
         {
             "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "Maintenance Area",
+            "shop": "CRU-L5 Maintenance",
             "price": 181700
         },
         {
@@ -188,7 +188,7 @@
         },
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 181700
         },
         {
@@ -220,7 +220,7 @@
         },
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 7862
         },
         {
@@ -282,12 +282,12 @@
         },
         {
             "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "Maintenance Area",
+            "shop": "CRU-L5 Maintenance",
             "price": 20186
         },
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 15317
         },
         {
@@ -324,7 +324,7 @@
     "WiDoW" : [
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 6780
         },
         {
@@ -349,7 +349,7 @@
         },
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
-            "shop": "Locker room",
+            "shop": "CRU-L4 Locker",
             "price": 5387
         },
         {
