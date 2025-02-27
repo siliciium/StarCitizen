@@ -2,7 +2,7 @@
     "Beryl":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 2401.0
         },
         {
@@ -64,12 +64,12 @@
     "Gold":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 5849.0
         },        
         {
             "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
-            "shop": "Locker room",
+            "shop": "CRU-L4 Locker",
             "price": 4948.0
         },        
         {
@@ -96,12 +96,12 @@
     "Quantainium":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 21376.0
         },
         {
             "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "Maintenance Area",
+            "shop": "CRU-L5 Maintenance",
             "price": 24011.0
         },
         {
@@ -118,12 +118,12 @@
     "Laranite":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 2449.0
         },
         {
             "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "Maintenance Area",
+            "shop": "CRU-L5 Maintenance",
             "price": 2125.0
         },
         {
@@ -175,7 +175,7 @@
     "Agricium":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 2266.0
         },
         {
@@ -237,7 +237,7 @@
     "Diamond":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 5169.0
         },
         {
@@ -260,7 +260,7 @@
     [
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "Admin",
+            "shop": "GrimHEX",
             "price": 9265.0
         },
         {
