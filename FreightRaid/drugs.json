@@ -1,0 +1,366 @@
+{
+    "Altruciatoxin" : [
+        {
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "GrimHEX",
+            "price": 4173
+        },
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 4446
+        },
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 4446
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 4446
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 4446
+        },
+        {
+            "location": "Pyro > Endgame",
+            "shop": "Endgame",            
+            "price": 4104
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",            
+            "price": 4104
+        },
+        {
+            "location": "Pyro > Gaslight",
+            "shop": "Gaslight",            
+            "price": 4104
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",            
+            "price": 4104
+        },
+        {
+            "location": "Pyro > Rod's Fuel 'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",            
+            "price": 4104
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",            
+            "price": 4093
+        },
+        {
+            "location": "Pyro > Megumi Refueling",
+            "shop": "Megumi Refueling",            
+            "price": 3990
+        }
+    ],
+    "Etam" : [
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 10983
+        },
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 10652
+        },
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 10652
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 10652
+        },
+        {
+            "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+            "shop": "CRU-L4 Locker",
+            "price": 9423
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 9468
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 9468
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",
+            "price": 9468
+        },
+        {
+            "location": "Pyro > Gaslight",
+            "shop": "Gaslight",
+            "price": 9468
+        },
+        {
+            "location": "Pyro > Endgame",
+            "shop": "Endgame",
+            "price": 9468
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",
+            "price": 9468
+        },
+        {
+            "location": "Pyro > Rat's Nest",
+            "shop": "Rat's Nest",
+            "price": 9468
+        }
+    ],
+    "Gasping Weevil Eggs" : [
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 23100
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 23065
+        },
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 22613
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 23100
+        },
+        {
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "GrimHEX",
+            "price": 18451
+        },
+        {
+            "location": "Pyro > Terminus",
+            "shop": "Ruin Station",
+            "price": 19635
+        }
+    ],
+    "Maze" : [
+        {
+            "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+            "shop": "CRU-L4 Locker",
+            "price": 181700
+        },
+        {
+            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+            "shop": "CRU-L5 Maintenance",
+            "price": 181700
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 181700
+        },
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 181700
+        },
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 181700
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 181700
+        },
+        {
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "GrimHEX",
+            "price": 181700
+        },
+        {
+            "location": "Pyro > Pyro V > Ignis",
+            "shop": "Ashland",
+            "price": 181700
+        }
+    ],
+    "Neon" : [
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 8595
+        },
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 8595
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 8595
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 8595
+        },
+        {
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "GrimHEX",
+            "price": 7862
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 7620
+        },
+        {
+            "location": "Pyro > Gaslight",
+            "shop": "Gaslight",
+            "price": 7620
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",
+            "price": 7620
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 7620
+        },
+        {
+            "location": "Pyro > Rat's Nest",
+            "shop": "Rat's Nest",
+            "price": 7620
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",
+            "price": 7620
+        },
+        {
+            "location": "Pyro > Endgame",
+            "shop": "Endgame",
+            "price": 7619
+        }
+    ],
+    "SLAM" : [        
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 20779
+        },
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 20779
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 20779
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 20779
+        },
+        {
+            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+            "shop": "CRU-L5 Maintenance",
+            "price": 20186
+        },
+        {
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "GrimHEX",
+            "price": 15317
+        },
+        {
+            "location": "Pyro > Pyro V > Ignis",
+            "shop": "Ashland",
+            "price": 18648
+        },
+        {
+            "location": "Pyro > Patch City",
+            "shop": "Patch City",
+            "price": 17582
+        },
+        {
+            "location": "Pyro > Rod's Fuel'N Supplies",
+            "shop": "Rod's Fuel'N Supplies",
+            "price": 17582
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 17100
+        },
+        {
+            "location": "Pyro > Dudley & Daughters",
+            "shop": "Dudley & Daughters",
+            "price": 15855
+        },
+        {
+            "location": "Pyro > Endgame",
+            "shop": "Endgame",
+            "price": 15392
+        }
+    ],
+    "WiDoW" : [
+        {
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "GrimHEX",
+            "price": 6780
+        },
+        {
+            "location": "Stanton > Crusader > Daymar",
+            "shop": "Brio's Breaker Yard",
+            "price": 6934
+        },
+        {
+            "location": "Stanton > ArcCorp > Wala",
+            "shop": "Samson & Son's Salvage Center",
+            "price": 6934
+        },
+        {
+            "location": "Stanton > microTech > Euterpe",
+            "shop": "Devlin Scrap & Salvage",
+            "price": 6934
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 6934
+        },
+        {
+            "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+            "shop": "CRU-L4 Locker",
+            "price": 5387
+        },
+        {
+            "location": "Pyro > Starlight Service Station",
+            "shop": "Starlight Service Station",
+            "price": 6164
+        },
+        {
+            "location": "Pyro > Pyro V > Ignis",
+            "shop": "Ashland",
+            "price": 6164
+        }
+    ]
+}
