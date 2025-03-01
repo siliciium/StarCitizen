@@ -61,6 +61,43 @@
             "price": 2412.0
         }
     ],
+    "CMAT":[
+        {
+            "location": "Pyro > Megumi Refueling",
+            "shop": "Megumi Refueling",
+            "price": 2300.0
+        },
+        {
+            "location": "Pyro > Terminus",
+            "shop": "Ruin Station",
+            "price": 2200.0
+        },
+        {
+            "location": "Pyro > Monox",
+            "shop": "Checkmate",
+            "price": 2160.0
+        },
+        {
+            "location": "Pyro > Bloom",
+            "shop": "Orbituary",
+            "price": 2160.0
+        },
+        {
+            "location": "Stanton > Crusader > Yela > Grim HEX",
+            "shop": "GrimHEX",
+            "price": 1994.0
+        },
+        {
+            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+            "shop": "CRU-L5 Maintenance",
+            "price": 1836.0
+        },
+        {
+            "location": "Stanton > Hurston",
+            "shop": "Reclamation & Disposal Orinth",
+            "price": 1809.0
+        }
+    ],
     "Gold":[
         {
             "location": "Stanton > Crusader > Yela > Grim HEX",
