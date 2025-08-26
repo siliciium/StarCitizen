@@ -320,9 +320,9 @@
     },
     "Raft":  {
         "name":  "ARGO Raft",
-        "scu":  96,
+        "scu":  192,
         "boxes" : {
-            "32" : 3
+            "32" : 6
         }
     },
     "Reclaimer":  {
