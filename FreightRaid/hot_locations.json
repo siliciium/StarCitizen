@@ -60,7 +60,11 @@
     },
     "Pyro" : {        
         "Bloom" : [
-            "Bueno Ravine"
+            "Bueno Ravine",
+            "Sheperd's Rest"
+        ],
+        "Monox" : [
+            "Jackson's Swap"
         ],
         "Clusters" : [
             "Cluster BGR-560",
