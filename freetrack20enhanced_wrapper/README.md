@@ -6,11 +6,12 @@ _CRL : C++/CLI Runtime Library, C++/CLI is an extension of C++ to interact with 
 **NOTE** : This project use some parts of this related project [OpenTrack](https://github.com/opentrack/opentrack)
 
 # Required for Star Citizen game
-[NPClient64.dll](https://github.com/opentrack/opentrack/blob/master/bin/NPClient64.dll)
 
 How it's work ? 
 - When you run Star Citizen game , the game search this registry key : `HKEY_CURRENT_USER\Software\NaturalPoint\NATURALPOINT\NPClient Location`, this contain the directory of `NPClient64.dll`. If exists, Star Citizen load the library.
 - Using this provided wrapper, you can communicate with the loaded library in your .NET project.
+
+You can download `NPClient64.dll` [here](https://github.com/opentrack/opentrack/blob/master/bin/NPClient64.dll)
 
 This wrapper was written specially to use [ROG Chakram Gaming Mouse](https://rog.asus.com/ch-fr/mice-mouse-pads/mice/ergonomic-right-handed/rog-chakram-model/spec/) joystick for in-game head tracking using a .NET project for mouse configuration. 
 
