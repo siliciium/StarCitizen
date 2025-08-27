@@ -1,4 +1,4 @@
-# Implement FreeTrack 2.0 Enhanced in your .NET project
+# Implement FreeTrack 2.0 Enhanced Protocol in your .NET project
 C++/CLI code that wraps native C++ for .NET
 
 _CRL : C++/CLI Runtime Library, C++/CLI is an extension of C++ to interact with the .NET Framework_
