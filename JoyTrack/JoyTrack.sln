@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{ED1E2EE7-2C3A-4EBC-8D9F-4879BF326F1E}") = "JoyTrack", "JoyTrack.csproj", "{DA635391-73E2-4971-8818-EF197B4034AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Debug|x64.ActiveCfg = Debug|x64
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Debug|x64.Build.0 = Debug|x64
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Release|x64.ActiveCfg = Release|x64
+		{DA635391-73E2-4971-8818-EF197B4034AB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F6CB6DD-B670-41B4-B3B3-1F5E4315DA5A}
+	EndGlobalSection
+EndGlobal
