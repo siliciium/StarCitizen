@@ -1,7 +1,14 @@
 # Tool to use [ROG Chakram Gaming Mouse](https://rog.asus.com/ch-fr/mice-mouse-pads/mice/ergonomic-right-handed/rog-chakram-model/spec/)'s joystick for Star Citizen in-game head tracking
 
 Required :
-You need to compile and add [freetrack20enhanced_wrapper.dll](https://github.com/siliciium/StarCitizen/tree/main/freetrack20enhanced_wrapper) reference to the project.
+You need to compile and add `freetrack20enhanced_wrapper` reference to the project, see below.
+<br/><br/>
+All references required :
+- [freetrack20enhanced_wrapper](https://github.com/siliciium/StarCitizen/tree/main/freetrack20enhanced_wrapper)
+- Nuget package [HelixToolkit.Wpf](https://www.nuget.org/packages/HelixToolkit)
+- Nuget package [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
+- Nuget package [SharpDX](https://www.nuget.org/packages/SharpDX)
+- Nuget package [SharpDX.DirectInput](https://www.nuget.org/packages/SharpDX.DirectInput)
 
 <br/><br/>
 _NOTE : This example use VKBSim joystick_
