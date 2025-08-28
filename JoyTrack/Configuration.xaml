@@ -1,0 +1,438 @@
+<Window x:Class="JoyTrack.Configuration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JoyTrack"
+        mc:Ignorable="d"
+        Title="Configuration" 
+        SizeToContent="WidthAndHeight"
+        Height="565" 
+        Width="682" 
+        Background="#FF04050A" 
+        Loaded="Window_Loaded" 
+        WindowStartupLocation="CenterOwner" 
+        Closed="Window_Closed" 
+        Icon="/headtracking.ico" ContentRendered="Window_ContentRendered">
+    <Window.Resources>
+        <Color x:Key="DisabledControlLightColor">#FFE8EDF9</Color>
+        <Color x:Key="DisabledControlDarkColor">#FFC5CBF9</Color>
+        <Color x:Key="DisabledForegroundColor">#FF888888</Color>
+        <Color x:Key="DisabledBorderLightColor">#FFAAAAAA</Color>
+        <Color x:Key="DisabledBorderDarkColor">#FF888888</Color>
+        <Color x:Key="ControlMouseOverColor">#FF1E90FF</Color>
+        <Color x:Key="ControlPressedColor">#FF1E90FF</Color>
+        <Color x:Key="GlyphColor">#FF1E90FF</Color>
+        <Color x:Key="GlyphMouseOver">#FF1E90FF</Color>
+        <Color x:Key="SelectedBackgroundColor">#FF050505</Color>
+        <Color x:Key="SelectedUnfocusedColor">#FF050505</Color>
+
+        <ControlTemplate x:Key="ComboBoxToggleButton"
+                 TargetType="{x:Type ToggleButton}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Border">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource ControlMouseOverColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Pressed" />
+                        <VisualState x:Name="Disabled">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Border">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledControlDarkColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="Arrow">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledForegroundColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Border">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledBorderDarkColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                    <VisualStateGroup x:Name="CheckStates">
+                        <VisualState x:Name="Checked">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Border">
+                                    <EasingColorKeyFrame KeyTime="0" Value="{StaticResource ControlPressedColor}" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Unchecked" />
+                        <VisualState x:Name="Indeterminate" />
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Border x:Name="Border" Grid.ColumnSpan="2" CornerRadius="2" BorderThickness="1">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FF1E90FF" Offset="0" />
+                            <GradientStop Color="#FF00386F" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Border.Background>
+
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStopCollection>
+                                    <GradientStop Color="#FF111217" />
+                                    <GradientStop Color="#FF0F0F14" Offset="1.0" />
+                                </GradientStopCollection>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+
+                    </Border.Background>
+                </Border>
+                <Border Grid.Column="0" CornerRadius="2,0,0,2" Margin="1" >
+                    <Border.Background>
+                        <SolidColorBrush Color="Black"/>
+                    </Border.Background>
+                </Border>
+                <Path x:Name="Arrow" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0 0 L 4 4 L 8 0 Z" >
+                    <Path.Fill>
+                        <SolidColorBrush Color="{DynamicResource GlyphColor}"/>
+                    </Path.Fill>
+                </Path>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="ComboBoxTextBox" TargetType="{x:Type TextBox}">
+            <Border x:Name="PART_ContentHost" Focusable="False" Background="{TemplateBinding Background}" />
+        </ControlTemplate>
+
+        <Style x:Key="{x:Type ComboBox}" TargetType="{x:Type ComboBox}">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
+            <Setter Property="MinWidth" Value="120" />
+            <Setter Property="MinHeight" Value="35" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="MouseOver" />
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="PART_EditableTextBox" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource DisabledForegroundColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="EditStates">
+                                    <VisualState x:Name="Editable">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PART_EditableTextBox">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ContentSite">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Uneditable" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ToggleButton x:Name="ToggleButton" Template="{StaticResource ComboBoxToggleButton}" Grid.Column="2" Focusable="false" ClickMode="Press" IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            <ContentPresenter x:Name="ContentSite" IsHitTestVisible="False" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" Margin="3,3,23,3" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            </ContentPresenter>
+
+                            <TextBox x:Name="PART_EditableTextBox" Style="{x:Null}" Template="{StaticResource ComboBoxTextBox}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="3,3,23,3" Focusable="True" Background="Transparent" Visibility="Hidden" IsReadOnly="{TemplateBinding IsReadOnly}" />
+
+                            <Popup x:Name="Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True" Focusable="False" PopupAnimation="Slide">
+                                <Grid x:Name="DropDown" SnapsToDevicePixels="True" MinWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                    <Border x:Name="DropDownBorder" BorderThickness="1">
+                                        <Border.BorderBrush>
+                                            <SolidColorBrush Color="#101010" />
+                                        </Border.BorderBrush>
+                                        <Border.Background>
+                                            <SolidColorBrush Color="#101010" />
+                                        </Border.Background>
+                                    </Border>
+                                    <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="HasItems" Value="false">
+                                <Setter TargetName="DropDownBorder" Property="MinHeight" Value="95" />
+                            </Trigger>
+                            <Trigger Property="IsGrouping" Value="true">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="false" />
+                            </Trigger>
+                            <Trigger SourceName="Popup" Property="AllowsTransparency" Value="true">
+                                <Setter TargetName="DropDownBorder" Property="CornerRadius" Value="4" />
+                                <Setter TargetName="DropDownBorder" Property="Margin" Value="0,2,0,0" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="{x:Type ComboBoxItem}" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                        <Border x:Name="Border" Padding="2" SnapsToDevicePixels="true" Background="Transparent">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="SelectionStates">
+                                    <VisualState x:Name="Unselected" />
+                                    <VisualState x:Name="Selected">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource SelectedBackgroundColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="SelectedUnfocused">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="{StaticResource SelectedUnfocusedColor}" />
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Color x:Key="PressedBorderLightColor">#FF888888</Color>
+        <Color x:Key="PressedBorderDarkColor">#FF444444</Color>
+
+        <Style x:Key="CustomCheckBoxStyle" TargetType="{x:Type CheckBox}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <BulletDecorator Background="Transparent">
+                            <BulletDecorator.Bullet>
+                                <Border x:Name="Border" Width="24" Height="24" CornerRadius="4" Padding="4" Background="{TemplateBinding Background}" BorderThickness="1">
+                                    <Border.BorderBrush>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="DodgerBlue" Offset="0.0"/>
+                                            <GradientStop Color="#FF00FF33" Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Border.BorderBrush>
+                                    <Grid>
+                                        <Path x:Name="CheckMark" Data="M 0 4 L 3 7 L 8 0" Stretch="Uniform" StrokeThickness="3" Visibility="Collapsed" Stroke="#FF00FF33"/>
+                                    </Grid>
+                                </Border>
+                            </BulletDecorator.Bullet>
+                            <ContentPresenter Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                        </BulletDecorator>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="CheckMark" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Foreground" Value="Gray"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="Gray"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CustomCheckBoxStyle1" TargetType="{x:Type CheckBox}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <BulletDecorator Background="Transparent">
+                            <BulletDecorator.Bullet>
+                                <Border x:Name="Border" Width="24" Height="24" CornerRadius="4" Padding="4" Background="{TemplateBinding Background}" BorderThickness="1">
+                                    <Border.BorderBrush>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="Transparent" Offset="0.0"/>
+                                            <GradientStop Color="Transparent" Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Border.BorderBrush>
+                                    <Grid>
+                                        <Path x:Name="CheckMark" Data="M 0 0 L 12 12 M 0 12 L 12 0" Stretch="Uniform" StrokeThickness="3" Visibility="Collapsed" Stroke="#FF00FF33"/>
+                                    </Grid>
+                                </Border>
+                            </BulletDecorator.Bullet>
+                            <ContentPresenter Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                        </BulletDecorator>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="CheckMark" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Foreground" Value="Gray"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="Gray"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Slider">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="#ff303030" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Slider">
+                        <Grid>
+                            <Border Background="#101010" BorderBrush="Black" BorderThickness="1" CornerRadius="0">
+                                <Grid>
+                                    <Rectangle Fill="#101010" Height="30" VerticalAlignment="Center" RadiusX="5" RadiusY="0" HorizontalAlignment="Left"/>
+                                    <Rectangle Name="PART_SelectionRange" Fill="#FF1476D6" Height="30" VerticalAlignment="Center" RadiusX="0" RadiusY="0" HorizontalAlignment="Left"/>
+                                </Grid>
+                            </Border>
+                            <Track x:Name="PART_Track">
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton>
+                                        <RepeatButton.Style>
+                                            <Style TargetType="RepeatButton">
+                                                <Setter Property="Width" Value="0" />
+                                                <Setter Property="Height" Value="10" />
+                                                <Setter Property="Background" Value="Transparent" />
+                                                <Setter Property="BorderBrush" Value="Transparent" />
+                                            </Style>
+                                        </RepeatButton.Style>
+                                    </RepeatButton>
+                                </Track.DecreaseRepeatButton>
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton>
+                                        <RepeatButton.Style>
+                                            <Style TargetType="RepeatButton">
+                                                <Setter Property="Width" Value="0" />
+                                                <Setter Property="Height" Value="10" />
+                                                <Setter Property="Background" Value="Transparent" />
+                                                <Setter Property="BorderBrush" Value="Transparent" />
+                                            </Style>
+                                        </RepeatButton.Style>
+                                    </RepeatButton>
+                                </Track.IncreaseRepeatButton>
+                                <Track.Thumb>
+                                    <Thumb>
+                                        <Thumb.Style>
+                                            <Style TargetType="Thumb">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="Thumb">
+                                                            <Border Width="16" Height="30"
+                                                            Background="#ff303030"
+                                                            BorderBrush="#ff353535"
+                                                            BorderThickness="1"
+                                                            CornerRadius="0" />
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </Thumb.Style>
+                                    </Thumb>
+                                </Track.Thumb>
+                            </Track>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+    </Window.Resources>
+    <Grid Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="190"/>
+            <ColumnDefinition Width="190"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="12,20,20,0" Content="🕹️ Device" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold"/>
+        <ComboBox Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="20,20,20,10" x:Name="cb_devices" HorizontalAlignment="Left" VerticalAlignment="Top" Width="327" SelectionChanged="cb_devices_SelectionChanged" FontSize="14" Foreground="White"/>
+        <!--<TextBlock Grid.Column="0" Grid.Row="2" Margin="20,10,20,5" x:Name="tb_dev_desc" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="#FF585858" FontSize="14" FontFamily="Consolas"/>-->
+        <TextBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="20,25,20,5" x:Name="tb_dev_desc" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="#FF585858" Background="#FF04050A" BorderBrush="#FF04050A" FontSize="16" FontFamily="Consolas" IsReadOnly="True" IsReadOnlyCaretVisible="False" BorderThickness="0"/>
+
+        <CheckBox Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource CustomCheckBoxStyle}" Margin="20,10,20,30" x:Name="chb_freetrack" Content=" FreeTrack 2.0 Enhanced" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Stretch" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold"/>
+
+
+
+        <Image x:Name="ic0" Grid.Column="0" Grid.Row="4" Margin="20,0,0,20" Width="65" Height="61" Source="/RESSOURCES/c0.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config0" Grid.Column="0" Grid.Row="4" Style="{StaticResource CustomCheckBoxStyle1}" Margin="40,0,0,20" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config0_Checked"/>
+
+        <Image x:Name="ic1" Grid.Column="0" Grid.Row="4" Margin="100,0,0,20" Width="65" Height="61" Source="/RESSOURCES/c1.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config1" Grid.Column="0" Grid.Row="4" Style="{StaticResource CustomCheckBoxStyle1}" Margin="120,0,0,20" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config1_Checked"/>
+
+
+
+        <Image x:Name="ic2" Grid.Column="1" Grid.Row="4" Margin="0,0,0,20" Width="65" Height="61" Source="/RESSOURCES/c2.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config2" Grid.Column="1" Grid.Row="4" Style="{StaticResource CustomCheckBoxStyle1}" Margin="20,0,0,20" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config2_Checked"/>
+
+        <Image x:Name="ic3" Grid.Column="1" Grid.Row="4" Margin="80,0,0,20" Width="65" Height="61" Source="/RESSOURCES/c3.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config3" Grid.Column="1" Grid.Row="4" Style="{StaticResource CustomCheckBoxStyle1}" Margin="100,0,0,20" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config3_Checked"/>
+
+
+
+        <Image x:Name="ic4" Grid.Column="0" Grid.Row="5" Margin="20,0,0,40" Width="65" Height="61" Source="/RESSOURCES/c4.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config4" Grid.Column="0" Grid.Row="5" Style="{StaticResource CustomCheckBoxStyle1}" Margin="40,0,0,40" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config4_Checked"/>
+
+        <Image x:Name="ic5" Grid.Column="0" Grid.Row="5" Margin="100,0,0,40" Width="65" Height="61" Source="/RESSOURCES/c5.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config5" Grid.Column="0" Grid.Row="5" Style="{StaticResource CustomCheckBoxStyle1}" Margin="120,0,0,40" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config5_Checked"/>
+
+
+
+        <Image x:Name="ic6" Grid.Column="1" Grid.Row="5" Margin="0,0,0,40" Width="65" Height="61" Source="/RESSOURCES/c6.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config6" Grid.Column="1" Grid.Row="5" Style="{StaticResource CustomCheckBoxStyle1}" Margin="20,0,0,40" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config6_Checked"/>
+
+        <Image x:Name="ic7" Grid.Column="1" Grid.Row="5" Margin="80,0,0,40" Width="65" Height="61" Source="/RESSOURCES/c7.png" HorizontalAlignment="Left"/>
+        <CheckBox x:Name="chb_Config7" Grid.Column="1" Grid.Row="5" Style="{StaticResource CustomCheckBoxStyle1}" Margin="100,0,0,40" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="chb_Config7_Checked"/>
+
+
+        <Label x:Name="label_curve" Grid.Column="2" Grid.Row="0" Margin="20,20,20,0" Content="⠕ Curve" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold"/>
+        <Slider x:Name="slider_curve" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Minimum="0.1" Maximum="5.0" Value="1.0" TickFrequency="0.05" IsSnapToTickEnabled="True" Height="30" Width="250" ValueChanged="slider_curve_ValueChanged"/>
+        <Border Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="254" Width="254" MinHeight="254" MinWidth="254" Margin="0" BorderBrush="#FF0F5AA4" BorderThickness="2" >
+            <Canvas x:Name="canva_curve" Background="#101010" HorizontalAlignment="Center" Height="250" Width="250" MinHeight="250" MinWidth="250" Margin="0"/>
+        </Border>
+        
+
+        <DockPanel Grid.Column="2" Grid.Row="4">
+            <Label x:Name="label_deadzone" DockPanel.Dock="Top" Margin="20,20,20,20" Content="⠶ Deadzone" HorizontalAlignment="Left" VerticalAlignment="top" Foreground="#FF65B6E0" FontSize="16" FontWeight="Bold" Background="#000A3967"/>
+            <Slider x:Name="slider_deadzone" Minimum="0.0" Maximum="1.0" Value="0.0" TickFrequency="0.01" IsSnapToTickEnabled="True" Height="30" Width="250" ValueChanged="slider_deadzone_ValueChanged"/>
+        </DockPanel>
+    </Grid>
+</Window>
