@@ -13,7 +13,7 @@ How it's work ?
 
 You can download `NPClient64.dll` [here](https://github.com/opentrack/opentrack/blob/master/bin/NPClient64.dll)
 
-This wrapper was written specially to use [ROG Chakram Gaming Mouse](https://rog.asus.com/ch-fr/mice-mouse-pads/mice/ergonomic-right-handed/rog-chakram-model/spec/) joystick for in-game head tracking using .NET project for mouse configuration. 
+This wrapper was written specially to use [ROG Chakram Gaming Mouse](https://rog.asus.com/ch-fr/mice-mouse-pads/mice/ergonomic-right-handed/rog-chakram-model/spec/) joystick for in-game head tracking using [.NET project](https://github.com/siliciium/StarCitizen/tree/main/JoyTrack) for mouse configuration. 
 
 # Disclaimer
 _This program is not affiliated with the Cloud Imperium group of companies. All content on this site not authored by its host or users are property of their respective owners. Star Citizen®, Roberts Space Industries® and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC_
