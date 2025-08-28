@@ -1,0 +1,43 @@
+<Window x:Class="JoyTrack.Messagebox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JoyTrack"
+        mc:Ignorable="d"
+        Title="Messagebox" 
+        SizeToContent="WidthAndHeight"
+        Height="250" 
+        Width="500"
+        Icon="/headtracking.ico"
+        Background="#FF04050A" 
+        WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+        <Style x:Key="CustomRichTextBoxStyle" TargetType="RichTextBox">
+            <Setter Property="OverridesDefaultStyle" Value="False"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <!-- Set your desired font family here -->
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RichTextBox">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="105"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="⚠️" Foreground="#FF65B6E0" FontSize="55" Padding="15" Margin="0,0,0,20" VerticalAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <RichTextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomRichTextBoxStyle}" FontSize="16" x:Name="rtb_message" Margin="0,0,0,0" Padding="0,25,20,20" Width="395" Background="Transparent" BorderBrush="#00ABADB3" SelectionBrush="#000078D7" Loaded="rtb_message_Loaded" Foreground="White"/>
+    </Grid>
+</Window>
