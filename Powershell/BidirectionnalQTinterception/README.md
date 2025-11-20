@@ -17,8 +17,8 @@ function Main(){
 } Main
 ```
 # OUTPUT
-<p align="center">
-<img width="915" height="532" alt="image" src="https://github.com/user-attachments/assets/26cfbd0f-71ff-4699-8752-f7fe32f1684c" />
+<p align="center" width="100%">
+  <img width="933" height="526" alt="image" src="https://github.com/user-attachments/assets/199daea6-72e3-499b-a68d-614933d5779e" style="width:100%;"/>
 </p>
 
 # Related Tool WEB Interface
