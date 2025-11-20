@@ -328,23 +328,3 @@ class QTTravel{
         return $o;
     }
 }
-
-
-
-
-function Main(){
-
-    $class = [QTTravel]::new();
-
-    $intersection = $class.GetIntersection("ArcCorp", "Hurston");
-
-    $intersections | Format-Table
-
-    $travel = $class.calc_traveltime_real("Spectre", $intersection.d_total, $intersection.d_om1_p1); 
-
-    $travel | Format-Table 
-
-    # here play with $travel.d_reach, $travel.d_reach ...
-
-}Main
-
