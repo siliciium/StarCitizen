@@ -12,7 +12,7 @@ function Main(){
   
   $travel | Format-Table 
   
-  # here play with $travel.d_reach, $travel.d_reach ...
+  # here play with $travel.d_reach, $travel.t_reach ...
 
 } Main
 ```
