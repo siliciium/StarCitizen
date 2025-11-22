@@ -2,13 +2,13 @@
 ```powershell
 function Main(){
 
-  $class = [QTTravel]::new();
+  $qttravel = [QTTravel]::new();
   
-  $intersection = $class.GetIntersection("ArcCorp", "Hurston");
+  $intersection = $qttravel.GetIntersection("ArcCorp", "Hurston");
   
   $intersections | Format-Table
   
-  $travel = $class.calc_traveltime_real("Spectre", $intersection.d_total, $intersection.d_om1_p1); 
+  $travel = $qttravel.calc_traveltime_real("Spectre", $intersection.d_total, $intersection.d_om1_p1); 
   
   $travel | Format-Table 
   
