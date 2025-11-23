@@ -6,7 +6,7 @@ function Main(){
   
   $intersection = $qttravel.GetIntersection("ArcCorp", "Hurston");
   
-  $intersections | Format-Table
+  $intersection | Format-Table
   
   $travel = $qttravel.calc_traveltime_real("Spectre", $intersection.d_total, $intersection.d_om1_p1); 
   
