@@ -1,9 +1,10 @@
 {
     "Stanton" : {
         "Microtech" : [
-            "SM0-10", 
-            "SM0-22", 
+            "SM0-10",
+            "SM0-13",
             "SM0-18",
+            "SM0-22",             
             "Outpost 54",
             "Dunboro",
             "Ghost Hollow",
@@ -12,7 +13,9 @@
                     "Devlin Scrap & Salvage"
                 ],
                 "Calliope" : [
-                    "Raven's Roost"
+                    "Raven's Roost",
+                    "Rayari Kaltag",
+                    "Rayari Anvik"
                 ]
             }
         ],
@@ -25,13 +28,16 @@
                     "Covalex Shipping Hub"
                 ],
                 "Cellin" : [
-                    "PRIVATE PROPERTY"
+                    "PRIVATE PROPERTY",
+                    "Terra Mills",
+                    "Hickes"
                 ],
                 "Yela" : [
                     "Grim HEX",
                     "NT-999-NX",
                     "Jumptown",
-                    "Yela Asteroids"
+                    "Yela Asteroids",
+                    "Deakins",
                 ]
             }
         ],
