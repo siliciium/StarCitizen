@@ -1,5 +1,5 @@
 {
-    "Altruciatoxin" : [
+    "Altruciatoxin" : [                                                                 
                 {
                         "location": "Stanton > MicroTech > Euterpe",
                         "shop": "Devlin Scrap",
@@ -91,7 +91,7 @@
                         "price": 6228,
                 }
         ],
-    "E'tam" : [
+    "E'tam" : [                                                                         
                 {
                         "location": "Stanton > ArcCorp > Wala",
                         "shop": "Samson & Son's",
@@ -106,6 +106,11 @@
                         "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
                         "shop": "CRU-L4 Locker",
                         "price": 26690,
+                },
+                {
+                        "location": "Stanton > MicroTech > Euterpe",
+                        "shop": "Devlin Scrap",
+                        "price": 26451,
                 },
                 {
                         "location": "Stanton > Crusader > Daymar",
@@ -141,6 +146,16 @@
                         "location": "Pyro > Pyro VI",
                         "shop": "Dudley and Daughters",
                         "price": 23155,
+                },
+                {
+                        "location": "Pyro > Pyro V",
+                        "shop": "Rat's Nest",
+                        "price": 22896,
+                },
+                {
+                        "location": "Stanton > Crusader > Yela",
+                        "shop": "GrimHEX",
+                        "price": 21899,
                 }
         ],
     "Gasping Weevil Eggs" : [
@@ -227,7 +242,7 @@
                         "price": 232654,
                 }
         ],
-    "Neon" : [                
+"Neon" : [                                                             
                 {
                         "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
                         "shop": "CRU-L4 Locker",
@@ -244,33 +259,8 @@
                         "price": 21449,
                 },
                 {
-                        "location": "Pyro > Pyro V",
-                        "shop": "Rod's Fuel",
-                        "price": 19177,
-                },
-                {
                         "location": "Pyro > Bloom",
                         "shop": "Patch City",
-                        "price": 19177,
-                },
-                {
-                        "location": "Pyro > Pyro VI",
-                        "shop": "Endgame",
-                        "price": 19177,
-                },
-                {
-                        "location": "Pyro > Pyro V",
-                        "shop": "Gaslight",
-                        "price": 19177,
-                },
-                {
-                        "location": "Pyro > Pyro V",
-                        "shop": "Rat's Nest",
-                        "price": 19177,
-                },
-                {
-                        "location": "Pyro > Pyro VI",
-                        "shop": "Dudley and Daughters",
                         "price": 19177,
                 },
                 {
@@ -279,8 +269,28 @@
                         "price": 19177,
                 },
                 {
+                        "location": "Pyro > Pyro VI",
+                        "shop": "Dudley and Daughters",
+                        "price": 19177,
+                },
+                {
                         "location": "Pyro > Pyro V",
-                        "shop": "Fallow Field",
+                        "shop": "Rat's Nest",
+                        "price": 19177,
+                },
+                {
+                        "location": "Pyro > Pyro V",
+                        "shop": "Gaslight",
+                        "price": 19177,
+                },
+                {
+                        "location": "Pyro > Pyro VI",
+                        "shop": "Endgame",
+                        "price": 19177,
+                },
+                {
+                        "location": "Pyro > Bloom",
+                        "shop": "Starlight Service",
                         "price": 19177,
                 },
                 {
@@ -289,9 +299,14 @@
                         "price": 19177,
                 },
                 {
-                        "location": "Stanton > ArcCorp > Wala",
-                        "shop": "Samson & Son's",
-                        "price": 19065,
+                        "location": "Pyro > Pyro V",
+                        "shop": "Rod's Fuel",
+                        "price": 19177,
+                },
+                {
+                        "location": "Pyro > Pyro V",
+                        "shop": "Fallow Field",
+                        "price": 19177,
                 },
                 {
                         "location": "Stanton > Crusader > Daymar",
@@ -299,8 +314,13 @@
                         "price": 19065,
                 },
                 {
-                        "location": "Pyro > Terminus",
-                        "shop": "Ruin Station",
+                        "location": "Stanton > ArcCorp > Wala",
+                        "shop": "Samson & Son's",
+                        "price": 19065,
+                },
+                {
+                        "location": "Pyro > Pyro VI",
+                        "shop": "Megumi",
                         "price": 17159,
                 },
                 {
@@ -309,8 +329,8 @@
                         "price": 17159,
                 },
                 {
-                        "location": "Pyro > Pyro VI",
-                        "shop": "Megumi",
+                        "location": "Pyro > Terminus",
+                        "shop": "Ruin Station",
                         "price": 17159,
                 },
                 {
@@ -319,7 +339,7 @@
                         "price": 17159,
                 }
         ],
-    "SLAM" : [
+    "SLAM" : [                                                                          
                 {
                         "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
                         "shop": "CRU-L5 Maintenance",
@@ -404,13 +424,18 @@
                         "location": "Stanton > Crusader > Yela",
                         "shop": "GrimHEX",
                         "price": 32203,
-                }
+                },
         ],
-    "WiDoW" : [
+    "WiDoW" : [                                                                         
                 {
                         "location": "Stanton > MicroTech > Euterpe",
                         "shop": "Devlin Scrap",
                         "price": 9028,
+                },
+                {
+                        "location": "Pyro > Bloom",
+                        "shop": "The Golden Riviera",
+                        "price": 8602,
                 },
                 {
                         "location": "Stanton > Crusader > Daymar",
@@ -448,7 +473,7 @@
                         "price": 6899,
                 },
                 {
-                        "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+                        "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",     
                         "shop": "CRU-L4 Locker",
                         "price": 5749,
                 }
