@@ -1,0 +1,27 @@
+{
+  "filters": {
+    "Astatine": null,
+    "Atlasium": null,
+    "Bexalite": null,
+    "Bioplastic": null,
+    "Carbon-Silk": { "short": "Carbon Silk" },
+    "Cobalt": null,
+    "Compboard": null,
+    "Construction Materials": { "short": "CMAT" },
+    "Degnous Root": null,
+    "Diamond": null,
+    "Fresh food": null,
+    "Golden Medmon": null,
+    "Laranite": null,
+    "Medical Supplies": null,
+    "Nitrogen": null,
+    "Organics": null,
+    "Pitambu": null,
+    "Quartz": null,
+    "Recycled Material Composite": { "short": "RMC" },
+    "Sunset Berries": null,
+    "Taranite": null,
+    "Thermalfoam": null,
+    "Tungsten": null
+  }
+}
