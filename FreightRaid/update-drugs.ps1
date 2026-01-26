@@ -27,24 +27,101 @@ $links = @{
     "CRU-L5 Maintenance" = "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station";
     "The Golden Riviera" = "Pyro > Bloom";
     "Rat's Nest" = "Pyro > Pyro V";
+    "Sacren's Plot" = "Pyro > Pyro V";
+    "Jackson's Swap" = "Pyro > Monox";
+    "Canard View" = "Pyro > Terminus";
+    "Shepherd's Rest" = "Pyro > Bloom";
+    "Bueno Ravine" = "Pyro > Bloom";
+    "Seer's Canyon" = "Pyro > Pyro V";
+    "Last Landings" = "Pyro > Terminus";
+    "Chawla's Beach" = "Pyro > Pyro V";
+    "Sunset Mesa" = "Pyro > Monox";
+    "Rustville" = "Pyro > Pyro I";
+    #"Deakins Research" = "Stanton > Yela";
+    #"Stanton Gateway (Nyx)" = "Nyx > Stanton Gateway";
+    #"TDD Orison" = "Stanton > Crusader";
+    #"CBD Lorville" = "Stanton > Hurston";
+    #"TDD New Babbage" = "Stanton > Microtech";
+    #"TDD Area 18" = "Stanton > ArcCorp";
+    #"Levski" = "Nyx";
 }
 
 
 $rep = (invoke-webrequest -Uri "")
 
-$drugname = "Maze"
+# stolens
+<# $comnames = @(
+"Bexalite";
+"Fresh food";
+"Thermalfoam";
+"Tungsten";
+"Organics";
+"Laranite";
+"Taranite";
+"Atlasium";
+"Quartz";
+"Diamond";
+"Compboard";
+"Medical Supplies";
+"Nitrogen";
+"Bioplastic";
+"Astatine";
+"Cobalt";
+"Recycled material composite"
+) #>
+
+# drugs
+$comnames = @(
+"Altruciatoxin";
+"E'tam";
+#"Gasping Weevil Eggs";
+#"Maze";
+"Neon";
+"SLAM";
+"WiDoW";
+"Distilled spirits"
+)
+
 
 $data = ($rep | ConvertFrom-Json).data
 
-Write-Host ("`t`"{0}`" : [" -f (CapitalizeFirstLetter -s $drugname))
-$data | Where-Object { $_.commodity_name -eq $drugname -and $_.status_sell -gt 0 } | Sort-Object -Property price_sell_avg -Descending  | ForEach-Object {
+$obj = @{}
 
-    $loc = $links[$_.terminal_name]
 
-    Write-Host "`t`t{"
-    Write-Host ("`t`t`t`"location`": `"{0}`"," -f $loc)
-    Write-Host ("`t`t`t`"shop`": `"{0}`"," -f $_.terminal_name)
-    Write-Host ("`t`t`t`"price`": {0}," -f $_.price_sell_avg)
-    Write-Host "`t`t},"
+foreach($comname in $comnames){
+
+    Write-Host -ForegroundColor Blue "$comname"
+
+    $objs_child = @()
+
+    $data | Where-Object { $_.commodity_name -eq $comname -and $_.status_sell -gt 0 -and $_.price_buy -eq 0 -and $_.price_sell -gt 0 } | Sort-Object -Property price_sell_avg -Descending  | ForEach-Object {
+
+        $loc = $links[$_.terminal_name]
+
+        if(-not [string]::IsNullOrEmpty($loc)){
+            $o = [ordered]@{}
+            $o.location = $loc
+            $o.shop = $_.terminal_name
+            $o.price = $_.price_sell_avg
+
+            $objs_child += $o;
+        }else{
+            Write-Host -ForegroundColor Red "Ignored : $($_.terminal_name)"
+        }
+    }
+
+    $k = (CapitalizeFirstLetter -s $comname)
+    $obj[$k] = $objs_child
+
+    Write-Host -ForegroundColor Blue "($($objs_child.Count))"
 }
-Write-Host "`t],"
+
+$sortedResult = [ordered]@{}
+
+foreach ($entry in $obj.GetEnumerator() | Sort-Object Name) {
+    $sortedResult[$entry.Key] = $entry.Value
+}
+
+
+$sortedResult | ConvertTo-Json -Depth 5
+
