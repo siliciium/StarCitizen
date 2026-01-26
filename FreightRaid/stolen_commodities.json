@@ -625,6 +625,108 @@
       "price": 1251
     }
   ],
+  "RMC": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Seer's Canyon",
+      "price": 7140
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Pyro I",
+      "shop": "Rustville",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Last Landings",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Gaslight",
+      "price": 6426
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 6069
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 6064
+    },
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 5355
+    },
+    {
+      "location": "Stanton > Hurston",
+      "shop": "Reclamation Orinth",
+      "price": 5221
+    },
+    {
+      "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+      "shop": "CRU-L5 Maintenance",
+      "price": 4819
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 4641
+    },
+    {
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 4176
+    }
+  ],
   "Taranite": [
     {
       "location": "Pyro > Pyro V",
