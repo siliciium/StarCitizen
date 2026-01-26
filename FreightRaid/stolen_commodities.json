@@ -1,360 +1,684 @@
 {
-    "Beryl":[
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 2401.0
-        },
-        {
-            "location": "Pyro > Endgame",
-            "shop": "Endgame",
-            "price": 2618.0
-        },
-        {
-            "location": "Pyro > Rod's Fuel'N Supplies",
-            "shop": "Rod's Fuel'N Supplies",
-            "price": 2596.0
-        },
-        {
-            "location": "Pyro > Starlight Service Station",
-            "shop": "Starlight Service Station",
-            "price": 2527.0
-        },
-        {
-            "location": "Pyro > Dudley & Daughters",
-            "shop": "Dudley & Daughters",
-            "price": 2481.0
-        },
-        {
-            "location": "Pyro > Gaslight",
-            "shop": "Gaslight",
-            "price": 2481.0
-        },
-        {
-            "location": "Pyro > Patch City",
-            "shop": "Patch City",
-            "price": 2481.0
-        },
-        {
-            "location": "Pyro > Rat's Nest",
-            "shop": "Rat's Nest",
-            "price": 2481.0
-        },
-        {
-            "location": "Pyro > Megumi Refueling",
-            "shop": "Megumi Refueling",
-            "price": 2412.0
-        },
-        {
-            "location": "Pyro > Monox",
-            "shop": "Checkmate",
-            "price": 2412.0
-        },
-        {
-            "location": " Pyro > Terminus",
-            "shop": "Ruin Station",
-            "price": 2412.0
-        },
-        {
-            "location": "Pyro > Bloom",
-            "shop": "Orbituary",
-            "price": 2412.0
-        }
-    ],
-    "CMAT":[
-        {
-            "location": "Pyro > Megumi Refueling",
-            "shop": "Megumi Refueling",
-            "price": 2300.0
-        },
-        {
-            "location": "Pyro > Terminus",
-            "shop": "Ruin Station",
-            "price": 2200.0
-        },
-        {
-            "location": "Pyro > Monox",
-            "shop": "Checkmate",
-            "price": 2160.0
-        },
-        {
-            "location": "Pyro > Bloom",
-            "shop": "Orbituary",
-            "price": 2160.0
-        },
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 1994.0
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "CRU-L5 Maintenance",
-            "price": 1836.0
-        },
-        {
-            "location": "Stanton > Hurston",
-            "shop": "Reclamation & Disposal Orinth",
-            "price": 1809.0
-        }
-    ],
-    "Gold":[
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 5849.0
-        },        
-        {
-            "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
-            "shop": "CRU-L4 Locker",
-            "price": 4948.0
-        },        
-        {
-            "location": "Stanton > ArcCorp > Wala",
-            "shop": "Samson & Son's Salvage Center",
-            "price": 4555.0
-        },        
-        {
-            "location": "Pyro > Rat's Nest",
-            "shop": "Rat's Nest",
-            "price": 6019.0
-        },        
-        {
-            "location": "Pyro > Monox",
-            "shop": "Jackson's Swap",
-            "price": 5234.0
-        },        
-        {
-            "location": "Pyro > Pyro V > Ignis",
-            "shop": "Ashland",
-            "price": 5234.0
-        }     
-    ],
-    "Quantanium":[
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 21376.0
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "CRU-L5 Maintenance",
-            "price": 24011.0
-        },
-        {
-            "location": "Pyro > Pyro V > Ignis",
-            "shop": "Ashland",
-            "price": 26719.5
-        },
-        {
-            "location": "Pyro > Terminus",
-            "shop": "Ruin Station",
-            "price": 22712.5
-        }
-    ],
-    "Laranite":[
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 2449.0
-        },
-        {
-            "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
-            "shop": "CRU-L5 Maintenance",
-            "price": 2125.0
-        },
-        {
-            "location": "Pyro > Dudley & Daughters",
-            "shop": "Dudley & Daughters",
-            "price": 2672.0
-        },
-        {
-            "location": "Pyro > Rod's Fuel'N Supplies",
-            "shop": "Rod's Fuel'N Supplies",
-            "price": 2625.0
-        },
-        {
-            "location": "Pyro > Rat's Nest",
-            "shop": "Rat's Nest",
-            "price": 2531.0
-        },
-        {
-            "location": "Pyro > Patch City",
-            "shop": "Patch City",
-            "price": 2531.0
-        },
-        {
-            "location": "Pyro > Starlight Service Station",
-            "shop": "Starlight Service Station",
-            "price": 2531.0
-        },
-        {
-            "location": "Pyro > Gaslight",
-            "shop": "Gaslight",
-            "price": 2531.0
-        },
-        {
-            "location": "Pyro > Endgame",
-            "shop": "Endgame",
-            "price": 2530.0
-        },
-        {
-            "location": "Pyro > Bloom",
-            "shop": "Orbituary",
-            "price": 2461.0
-        },
-        {
-            "location": "Pyro > Terminus",
-            "shop": "Ruin Station",
-            "price": 2461.0
-        }
-    ],
-    "Agricium":[
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 2266.0
-        },
-        {
-            "location": "Stanton > ArcCorp > Wala",
-            "shop": "Samson & Son's Salvage Center",
-            "price": 2265.0
-        },
-        {
-            "location": "Stanton > microTech > Euterpe",
-            "shop": "Devlin Scrap & Salvage",
-            "price": 2265.0
-        },
-        {
-            "location": "Stanton > Crusader > Daymar",
-            "shop": "Brio's Breaker Yard",
-            "price": 2265.0
-        },
-        {
-            "location": "Pyro > Rod's Fuel'N Supplies",
-            "shop": "Rod's Fuel'N Supplies",
-            "price": 2327.0
-        },
-        {
-            "location": "Pyro > Dudley & Daughters",
-            "shop": "Dudley & Daughters",
-            "price": 2225.0
-        },
-        {
-            "location": "Pyro > Rat's Nest",
-            "shop": "Rat's Nest",
-            "price": 2225.0
-        },
-        {
-            "location": "Pyro > Starlight Service Station",
-            "shop": "Starlight Service Station",
-            "price": 2225.0
-        },
-        {
-            "location": "Pyro > Patch City",
-            "shop": "Patch City",
-            "price": 2225.0
-        },
-        {
-            "location": "Pyro > Monox",
-            "shop": "Checkmate",
-            "price": 2163.0
-        },
-        {
-            "location": "Pyro > Terminus",
-            "shop": "Ruin Station",
-            "price": 2163.0
-        },
-        {
-            "location": "Pyro > Megumi Refueling",
-            "shop": "Megumi Refueling",
-            "price": 2163.0
-        }
-    ],
-    "Diamond":[
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 5169.0
-        },
-        {
-            "location": "Pyro > Rod's Fuel'N Supplies",
-            "shop": "Rod's Fuel'N Supplies",
-            "price": 5582.0
-        },
-        {
-            "location": "Pyro > Starlight Service Station",
-            "shop": "Starlight Service Station",
-            "price": 5440.0
-        },
-        {
-            "location": "Pyro > Jackson's Swap",
-            "shop": "Jackson's Swap",
-            "price": 4625.0
-        }
-    ],
-    "RMC":
-    [
-        {
-            "location": "Stanton > Crusader > Yela > Grim HEX",
-            "shop": "GrimHEX",
-            "price": 9265.0
-        },
-        {
-            "location": "Pyro > Pyro V > Vatra",
-            "shop": "Seer's Canyon",
-            "price": 11300.0
-        },
-        {
-            "location": "Pyro > Terminus",
-            "shop": "Last Landings",
-            "price": 10800.0
-        },
-        {
-            "location": "Pyro > Pyro V > Ignis",
-            "shop": "Ashland",
-            "price": 10800.0
-        },
-        {
-            "location": "Pyro > Rat's Nest",
-            "shop": "Rat's Nest",
-            "price": 10528.0
-        },
-        {
-            "location": "Pyro > Endgame",
-            "shop": "Endgame",
-            "price": 10500.0
-        },
-        {
-            "location": "Pyro > Dudley & Daughters",
-            "shop": "Dudley & Daughters",
-            "price": 10500.0
-        },
-        {
-            "location": "Pyro > Rod's Fuel'N Supplies",
-            "shop": "Rod's Fuel'N Supplies",
-            "price": 10475.0
-        },
-        {
-            "location": "Pyro > Patch City",
-            "shop": "Patch City",
-            "price": 10248.0
-        },
-        {
-            "location": "Pyro > Starlight Service Station",
-            "shop": "Starlight Service Station",
-            "price": 10247.5
-        },
-        {
-            "location": "Pyro > Gaslight",
-            "shop": "Gaslight",
-            "price": 10232.0
-        },
-        {
-            "location": "Pyro > Terminus",
-            "shop": "Ruin Station",
-            "price": 9350.0
-        }
-    ]
-    
+  "Astatine": [
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 2894
+    },
+    {
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 2554
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 2554
+    },
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 2554
+    }
+  ],
+  "Atlasium": [
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Bueno Ravine",
+      "price": 100453
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Last Landings",
+      "price": 94035
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Seer's Canyon",
+      "price": 93911
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 80208
+    }
+  ],
+  "Bexalite": [
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 20440
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 20282
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 19932
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 19364
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 19364
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 19364
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 19364
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 19363
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 19242
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 17212
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 16459
+    },
+    {
+      "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+      "shop": "CRU-L5 Maintenance",
+      "price": 15491
+    }
+  ],
+  "Bioplastic": [
+    {
+      "location": "Pyro > Monox",
+      "shop": "Checkmate",
+      "price": 8695
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 8588
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Orbituary",
+      "price": 8356
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Last Landings",
+      "price": 8116
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 7730
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 7729
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 7729
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 7729
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 7729
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Megumi",
+      "price": 7729
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 7729
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 6956
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 6570
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Shepherd's Rest",
+      "price": 5779
+    }
+  ],
+  "Cobalt": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 23346
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 22799
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 21850
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 20520
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 18301
+    }
+  ],
+  "Compboard": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Last Landings",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Seer's Canyon",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 28917
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 28917
+    }
+  ],
+  "Diamond": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 7726
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 7403
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 6292
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 6292
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 6292
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 6291
+    },
+    {
+      "location": "Stanton > Hurston",
+      "shop": "Reclamation Orinth",
+      "price": 5922
+    }
+  ],
+  "Fresh food": [
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Last Landings",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Seer's Canyon",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Bueno Ravine",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 25534
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 24133
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 21719
+    }
+  ],
+  "Laranite": [
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 5283
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 5283
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 4755
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 4755
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 4755
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 4755
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 4755
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Gaslight",
+      "price": 4755
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Orbituary",
+      "price": 4623
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 4041
+    },
+    {
+      "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+      "shop": "CRU-L5 Maintenance",
+      "price": 3566
+    }
+  ],
+  "Medical Supplies": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Gaslight",
+      "price": 5559
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 5559
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Orbituary",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 5294
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 5294
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 4500
+    },
+    {
+      "location": "Stanton > Hurston",
+      "shop": "Reclamation Orinth",
+      "price": 3970
+    }
+  ],
+  "Nitrogen": [
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Shepherd's Rest",
+      "price": 3026
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Orbituary",
+      "price": 3026
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Megumi",
+      "price": 3026
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 3026
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 3026
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 3024
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 3022
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Checkmate",
+      "price": 3019
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 3017
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 2501
+    }
+  ],
+  "Organics": [
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Shepherd's Rest",
+      "price": 14112
+    }
+  ],
+  "Quartz": [
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 1853
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 1668
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Gaslight",
+      "price": 1668
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Checkmate",
+      "price": 1668
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 1668
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Orbituary",
+      "price": 1668
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 1668
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 1668
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 1417
+    },
+    {
+      "location": "Stanton > Hurston",
+      "shop": "Reclamation Orinth",
+      "price": 1251
+    }
+  ],
+  "Taranite": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 22402
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 20498
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 20498
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 20498
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 20498
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 20497
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 20497
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 20483
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 17423
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 17423
+    },
+    {
+      "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+      "shop": "CRU-L4 Locker",
+      "price": 17423
+    }
+  ],
+  "Thermalfoam": [
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 9745
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 5112
+    }
+  ],
+  "Tungsten": [
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 4050
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Megumi",
+      "price": 2734
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 2077
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 1859
+    },
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 1749
+    },
+    {
+      "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+      "shop": "CRU-L4 Locker",
+      "price": 1745
+    }
+  ]
 }
