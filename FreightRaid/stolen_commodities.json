@@ -127,6 +127,21 @@
       "price": 8116
     },
     {
+      "location": "Pyro > Pyro I",
+      "shop": "Rustville",
+      "price": 8116
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Sunset Mesa",
+      "price": 8116
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Chawla's Beach",
+      "price": 8116
+    },
+    {
       "location": "Pyro > Pyro V",
       "shop": "Fallow Field",
       "price": 7730
@@ -211,8 +226,23 @@
       "price": 33075
     },
     {
+      "location": "Pyro > Pyro V",
+      "shop": "Chawla's Beach",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Pyro I",
+      "shop": "Rustville",
+      "price": 33075
+    },
+    {
       "location": "Pyro > Terminus",
       "shop": "Canard View",
+      "price": 33075
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Sunset Mesa",
       "price": 33075
     },
     {
@@ -295,6 +325,11 @@
       "price": 25552
     },
     {
+      "location": "Pyro > Monox",
+      "shop": "Sunset Mesa",
+      "price": 25552
+    },
+    {
       "location": "Pyro > Pyro V",
       "shop": "Fallow Field",
       "price": 25552
@@ -302,6 +337,11 @@
     {
       "location": "Pyro > Pyro V",
       "shop": "Ashland",
+      "price": 25552
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Chawla's Beach",
       "price": 25552
     },
     {
@@ -328,6 +368,11 @@
       "location": "Pyro > Terminus",
       "shop": "Canard View",
       "price": 25534
+    },
+    {
+      "location": "Pyro > Pyro I",
+      "shop": "Rustville",
+      "price": 25447
     },
     {
       "location": "Pyro > Terminus",
