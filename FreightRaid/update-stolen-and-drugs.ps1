@@ -50,37 +50,40 @@ $links = @{
 $rep = (invoke-webrequest -Uri "")
 
 # stolens
-<# $comnames = @(
-"Bexalite";
-"Fresh food";
-"Thermalfoam";
-"Tungsten";
-"Organics";
-"Laranite";
-"Taranite";
-"Atlasium";
-"Quartz";
-"Diamond";
-"Compboard";
-"Medical Supplies";
-"Nitrogen";
-"Bioplastic";
-"Astatine";
-"Cobalt";
-"Recycled material composite"
-) #>
+$comnames = @(
+    <# "Amioshi Plague";
+    "Astatine";
+    "Atlasium";
+    "Bexalite";
+    "Bioplastic";
+    "Borase";
+    "Cobalt";
+    "Compboard";
+    "Diamond";
+    "Fresh Food";
+    "Laranite";
+    "Medical Supplies";
+    "Nitrogen";
+    "Organics";
+    "Pressurized Ice";
+    "Quartz";
+    "Recycled material composite";
+    "Taranite";
+    "Thermalfoam";
+    "Tungsten"; #>
+)
 
 # drugs
-$comnames = @(
-"Altruciatoxin";
-"E'tam";
-#"Gasping Weevil Eggs";
-#"Maze";
-"Neon";
-"SLAM";
-"WiDoW";
-"Distilled spirits"
-)
+<# $comnames = @(
+    "Altruciatoxin";
+    "Distilled spirits";
+    "E'tam";
+    "Gasping Weevil Eggs";
+    "Maze";
+    "Neon";
+    "SLAM";
+    "WiDoW"; 
+) #>
 
 
 $data = ($rep | ConvertFrom-Json).data
