@@ -45,6 +45,10 @@
             "Reclamation & Disposal Orinth",
             "Pickers Field",
             "Rappel",
+            "HDMS-Stanhope",
+            "HDMS-Hadley",
+            "HDMS-Pinewood",
+            "HDMS-Thedus",
             {                
                 "Arial" : [
                     "HDMS-Bezdek",
@@ -59,7 +63,9 @@
                     "Paradise Cove"
                 ],
                 "Wala" : [
-                    "Samson & Son's"
+                    "Samson & Son's",
+                    "ArcCorp 045",
+                    "ArcCorp 056"
                 ]
             }
         ]  
@@ -95,6 +101,9 @@
         ],
         "Terminus" : [
             "Dudley & Daughters"
+        ],
+        "Pyro IV" : [
+            "Fallow Field"
         ]
     }
 }
