@@ -214,6 +214,93 @@
       "price": 5779
     }
   ],
+  "Borase": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Gaslight",
+      "price": 7871
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 6997
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 6299
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Orbituary",
+      "price": 6297
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 6297
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 6297
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 6297
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Megumi",
+      "price": 6297
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Checkmate",
+      "price": 6297
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 6297
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 6297
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 5947
+    },
+    {
+      "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+      "shop": "CRU-L5 Maintenance",
+      "price": 5247
+    },
+    {
+      "location": "Stanton > Hurston",
+      "shop": "Reclamation Orinth",
+      "price": 5037
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 4408
+    },
+    {
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 4408
+    },
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 4408
+    }
+  ],
   "Cobalt": [
     {
       "location": "Pyro > Pyro V",
@@ -593,6 +680,123 @@
       "location": "Pyro > Bloom",
       "shop": "Shepherd's Rest",
       "price": 14112
+    }
+  ],
+  "Pressurized Ice": [
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 2626
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Seer's Canyon",
+      "price": 2534
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Sunset Mesa",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Chawla's Beach",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Last Landings",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Pyro I",
+      "shop": "Rustville",
+      "price": 2516
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Orbituary",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Checkmate",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Shepherd's Rest",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Bueno Ravine",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley and Daughters",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 2407
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Megumi",
+      "price": 2407
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 2009
     }
   ],
   "Quartz": [
