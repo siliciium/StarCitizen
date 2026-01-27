@@ -76,6 +76,15 @@
             "24" : 1
         }
     },
+    "Asgard":  {
+        "name":  "ANVIL Asgard",
+        "scu":  180,
+        "boxes" : {
+            "32" : 4,
+            "2" : 24,
+            "1" : 4
+        }
+    },
     "Aurora CL":  {
         "name":  "RSI Aurora CL",
         "scu":  6,
