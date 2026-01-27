@@ -1,4 +1,26 @@
 {
+  "Amioshi Plague": [
+    {
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 34320
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 24710
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 24709
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 23474
+    }
+  ],
   "Astatine": [
     {
       "location": "Stanton > Crusader > Yela",
