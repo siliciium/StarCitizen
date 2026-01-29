@@ -372,6 +372,11 @@
             "4" : 8
         }
     },
+    "Starlancer TAC":{
+        "name" : "MISC Starlancer TAC",
+        "scu" : 96,
+        "boxes" : {}
+    },
     "Titan":  {
         "name":  "AEGIS Avenger Titan",
         "scu":  8,
