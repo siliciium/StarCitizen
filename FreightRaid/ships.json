@@ -81,12 +81,14 @@
         "scu":  32,
         "boxes" : {
             "16" : 2
+        }
     },
     "Apollo Triage":  {
         "name":  "RSI Appolo Triage",
         "scu":  32,
         "boxes" : {
             "16" : 2
+        }
     },    
     "Asgard":  {
         "name":  "ANVIL Asgard",
