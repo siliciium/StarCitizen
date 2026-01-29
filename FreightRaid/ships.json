@@ -76,6 +76,18 @@
             "24" : 1
         }
     },
+    "Apollo Medivac":  {
+        "name":  "RSI Appolo Medivac",
+        "scu":  32,
+        "boxes" : {
+            "16" : 2
+    },
+    "Apollo Triage":  {
+        "name":  "RSI Appolo Triage",
+        "scu":  32,
+        "boxes" : {
+            "16" : 2
+    },    
     "Asgard":  {
         "name":  "ANVIL Asgard",
         "scu":  180,
@@ -278,6 +290,11 @@
             "2" : 6
         }
     },
+    "Hermes":  {
+        "name":  "RSI Hermes",
+        "scu":  288,
+        "boxes" : {}
+    },    
     "Hull A":  {
         "name":  "MISC Hull A",
         "scu":  64,
