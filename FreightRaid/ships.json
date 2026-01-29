@@ -295,7 +295,10 @@
     "Hermes":  {
         "name":  "RSI Hermes",
         "scu":  288,
-        "boxes" : {}
+        "boxes" : {
+            "32" : 8,
+            "16" : 2
+        }
     },    
     "Hull A":  {
         "name":  "MISC Hull A",
@@ -375,7 +378,10 @@
     "Starlancer TAC":{
         "name" : "MISC Starlancer TAC",
         "scu" : 96,
-        "boxes" : {}
+        "boxes" : {
+            "32" : 2,
+            "4" : 8
+        }
     },
     "Titan":  {
         "name":  "AEGIS Avenger Titan",
