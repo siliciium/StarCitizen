@@ -494,6 +494,58 @@
       "price": 21719
     }
   ],
+  "Gold": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 8376
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 7161
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 7119
+    },
+    {
+      "location": "Pyro > Monox",
+      "shop": "Jackson's Swap",
+      "price": 6407
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 6407
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Canard View",
+      "price": 6407
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 6407
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Sacren's Plot",
+      "price": 6407
+    },
+    {
+      "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+      "shop": "CRU-L4 Locker",
+      "price": 5653
+    },
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 5653
+    }
+  ],
   "Laranite": [
     {
       "location": "Pyro > Pyro VI",
