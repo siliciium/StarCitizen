@@ -546,6 +546,18 @@
       "price": 5653
     }
   ],
+  "Iodine": [
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 10199
+    },
+    {
+      "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+      "shop": "CRU-L5 Maintenance",
+      "price": 9599
+    }
+  ],
   "Laranite": [
     {
       "location": "Pyro > Pyro VI",
