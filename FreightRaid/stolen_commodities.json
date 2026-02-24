@@ -65,6 +65,48 @@
       "price": 80208
     }
   ],
+  "Audio Visual Equipment":  [
+     {
+         "location":  "Pyro > Pyro V",
+         "shop":  "Chawla's Beach",
+         "price":  36532
+     },
+     {
+         "location":  "Pyro > Pyro I",
+         "shop":  "Rustville",
+         "price":  35532
+     },
+     {
+         "location":  "Pyro > Monox",
+         "shop":  "Jackson's Swap",
+         "price":  35532
+     },
+     {
+         "location":  "Pyro > Pyro V",
+         "shop":  "Ashland",
+         "price":  35532
+     },
+     {
+         "location":  "Pyro > Bloom",
+         "shop":  "Bueno Ravine",
+         "price":  35532
+     },
+     {
+         "location":  "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+         "shop":  "CRU-L5 Maintenance",
+         "price":  31978
+     },
+     {
+         "location":  "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+         "shop":  "CRU-L4 Locker",
+         "price":  31978
+     },
+     {
+         "location":  "Stanton > Crusader > Yela",
+         "shop":  "GrimHEX",
+         "price":  30202
+     }
+ ],
   "Bexalite": [
     {
       "location": "Pyro > Bloom",
