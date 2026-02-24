@@ -494,6 +494,38 @@
       "price": 21719
     }
   ],
+  "Gasping Weevil Eggs":  [
+    {
+        "location":  "Stanton > Crusader > Daymar",
+        "shop":  "Brio's Breaker",
+        "price":  85732
+    },
+    {
+        "location":  "Stanton > MicroTech > Euterpe",
+        "shop":  "Devlin Scrap",
+        "price":  77672
+    },
+    {
+        "location":  "Stanton > Hurston",
+        "shop":  "Reclamation Orinth",
+        "price":  68585
+    },
+    {
+        "location":  "Stanton > ArcCorp > Wala",
+        "shop":  "Samson & Son's",
+        "price":  65948
+    },
+    {
+        "location":  "Stanton > Crusader > Yela",
+        "shop":  "GrimHEX",
+        "price":  59353
+    },
+    {
+        "location":  "Pyro > Terminus",
+        "shop":  "Ruin Station",
+        "price":  56055
+    }
+],
   "Gold": [
     {
       "location": "Pyro > Pyro V",
