@@ -343,6 +343,13 @@
       "price": 4408
     }
   ],
+  "CK13": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Chawla's Beach",
+      "price": 8050
+    }
+  ],
   "Cobalt": [
     {
       "location": "Pyro > Pyro V",
@@ -462,6 +469,13 @@
       "location": "Stanton > Hurston",
       "shop": "Reclamation Orinth",
       "price": 5922
+    }
+  ],
+  "Elespo" : [
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ashland",
+      "price": 15000
     }
   ],
   "Fresh food": [
