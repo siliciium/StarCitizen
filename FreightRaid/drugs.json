@@ -1,111 +1,111 @@
 {
   "Altruciatoxin": [
     {
-      "location": "Stanton > MicroTech > Euterpe",
-      "shop": "Devlin Scrap",
-      "price": 10432
-    },
-    {
       "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
       "shop": "CRU-L4 Locker",
-      "price": 7130
+      "price": 7100
     },
     {
       "location": "Stanton > ArcCorp > Wala",
       "shop": "Samson & Son's",
-      "price": 6975
+      "price": 6900
     },
     {
-      "location": "Stanton > Crusader > Daymar",
-      "shop": "Brio's Breaker",
-      "price": 6975
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 6900
     },
     {
       "location": "Stanton > Hurston",
       "shop": "Reclamation Orinth",
-      "price": 6975
+      "price": 6900
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 6800
     },
     {
       "location": "Stanton > Crusader > Yela",
       "shop": "GrimHEX",
-      "price": 6557
+      "price": 6500
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Gaslight",
-      "price": 6438
-    },
-    {
-      "location": "Pyro > Pyro V",
-      "shop": "Rod's Fuel",
-      "price": 6438
-    },
-    {
-      "location": "Pyro > Bloom",
-      "shop": "Patch City",
-      "price": 6438
+      "price": 6400
     },
     {
       "location": "Pyro > Pyro VI",
       "shop": "Endgame",
-      "price": 6437
+      "price": 6400
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 6400
     },
     {
       "location": "Pyro > Bloom",
       "shop": "Starlight Service",
-      "price": 6417
+      "price": 6400
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 6400
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley & Daughters",
+      "price": 6333
     },
     {
       "location": "Pyro > Monox",
       "shop": "Checkmate",
-      "price": 6259
+      "price": 6200
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Ashland",
-      "price": 6259
+      "price": 6200
     },
     {
       "location": "Pyro > Terminus",
       "shop": "Ruin Station",
-      "price": 6259
+      "price": 6200
     },
     {
       "location": "Pyro > Bloom",
       "shop": "Orbituary",
-      "price": 6259
+      "price": 6200
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Fallow Field",
-      "price": 6259
+      "price": 6200
     },
     {
       "location": "Pyro > Pyro VI",
       "shop": "Megumi",
-      "price": 6259
-    },
-    {
-      "location": "Pyro > Pyro VI",
-      "shop": "Dudley and Daughters",
-      "price": 6228
+      "price": 6200
     }
   ],
   "Distilled spirits": [
     {
-      "location": "Pyro > Pyro V",
-      "shop": "Rod's Fuel",
-      "price": 1883
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 1825
     },
     {
       "location": "Pyro > Pyro VI",
-      "shop": "Dudley and Daughters",
-      "price": 1883
+      "shop": "Dudley & Daughters",
+      "price": 1800
     },
     {
-      "location": "Pyro > Terminus",
-      "shop": "Ruin Station",
-      "price": 1883
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 1800
     },
     {
       "location": "Stanton > Crusader > Yela",
@@ -115,310 +115,401 @@
     {
       "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
       "shop": "CRU-L5 Maintenance",
-      "price": 1506
+      "price": 1500
     }
   ],
   "E'tam": [
     {
-      "location": "Stanton > ArcCorp > Wala",
-      "shop": "Samson & Son's",
-      "price": 27014
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 30000
     },
     {
       "location": "Stanton > Hurston",
       "shop": "Reclamation Orinth",
-      "price": 27014
-    },
-    {
-      "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
-      "shop": "CRU-L4 Locker",
-      "price": 26690
-    },
-    {
-      "location": "Stanton > MicroTech > Euterpe",
-      "shop": "Devlin Scrap",
-      "price": 26451
+      "price": 27000
     },
     {
       "location": "Stanton > Crusader > Daymar",
       "shop": "Brio's Breaker",
-      "price": 25722
+      "price": 25500
+    },
+    {
+      "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+      "shop": "CRU-L4 Locker",
+      "price": 24500
+    },
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 23000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Rod's Fuel",
-      "price": 23155
+      "price": 23000
     },
     {
       "location": "Pyro > Bloom",
       "shop": "Patch City",
-      "price": 23155
+      "price": 23000
     },
     {
       "location": "Pyro > Bloom",
       "shop": "Starlight Service",
-      "price": 23155
+      "price": 23000
     },
     {
       "location": "Pyro > Pyro VI",
       "shop": "Endgame",
-      "price": 23155
+      "price": 23000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Gaslight",
-      "price": 23155
-    },
-    {
-      "location": "Pyro > Pyro VI",
-      "shop": "Dudley and Daughters",
-      "price": 23155
+      "price": 23000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Rat's Nest",
-      "price": 22896
+      "price": 23000
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley & Daughters",
+      "price": 23000
     },
     {
       "location": "Stanton > Crusader > Yela",
       "shop": "GrimHEX",
-      "price": 21899
+      "price": 21000
+    }
+  ],
+  "Elespo": [
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 15000
+    }
+  ],
+  "Gasping Weevil Eggs": [
+    {
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 77000
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 73000
+    },
+    {
+      "location": "Stanton > Hurston",
+      "shop": "Reclamation Orinth",
+      "price": 66000
+    },
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 65000
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 59000
+    },
+    {
+      "location": "Pyro > Terminus",
+      "shop": "Ruin Station",
+      "price": 56000
+    }
+  ],
+  "Maze": [
+    {
+      "location": "Stanton > ArcCorp > Wala",
+      "shop": "Samson & Son's",
+      "price": 230000
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 230000
+    },
+    {
+      "location": "Stanton > MicroTech > Euterpe",
+      "shop": "Devlin Scrap",
+      "price": 230000
+    },
+    {
+      "location": "Stanton > Hurston",
+      "shop": "Reclamation Orinth",
+      "price": 230000
+    },
+    {
+      "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
+      "shop": "CRU-L4 Locker",
+      "price": 230000
+    },
+    {
+      "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
+      "shop": "CRU-L5 Maintenance",
+      "price": 230000
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Ashland",
+      "price": 230000
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 230000
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 230000
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 230000
     }
   ],
   "Neon": [
     {
       "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
       "shop": "CRU-L4 Locker",
-      "price": 24056
+      "price": 26000
     },
     {
       "location": "Stanton > MicroTech > Euterpe",
       "shop": "Devlin Scrap",
-      "price": 23059
+      "price": 23000
     },
     {
       "location": "Stanton > Hurston",
       "shop": "Reclamation Orinth",
-      "price": 21449
-    },
-    {
-      "location": "Pyro > Bloom",
-      "shop": "Patch City",
-      "price": 19177
-    },
-    {
-      "location": "Stanton > Crusader > Yela",
-      "shop": "GrimHEX",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Pyro VI",
-      "shop": "Dudley and Daughters",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Pyro V",
-      "shop": "Rat's Nest",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Pyro V",
-      "shop": "Gaslight",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Pyro VI",
-      "shop": "Endgame",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Bloom",
-      "shop": "Starlight Service",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Bloom",
-      "shop": "The Golden Riviera",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Pyro V",
-      "shop": "Rod's Fuel",
-      "price": 19177
-    },
-    {
-      "location": "Pyro > Pyro V",
-      "shop": "Fallow Field",
-      "price": 19177
-    },
-    {
-      "location": "Stanton > Crusader > Daymar",
-      "shop": "Brio's Breaker",
-      "price": 19065
+      "price": 21000
     },
     {
       "location": "Stanton > ArcCorp > Wala",
       "shop": "Samson & Son's",
-      "price": 19065
+      "price": 19000
+    },
+    {
+      "location": "Stanton > Crusader > Yela",
+      "shop": "GrimHEX",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Dudley & Daughters",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rat's Nest",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Pyro VI",
+      "shop": "Endgame",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Patch City",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Rod's Fuel",
+      "price": 19000
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Fallow Field",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 19000
+    },
+    {
+      "location": "Pyro > Pyro V",
+      "shop": "Gaslight",
+      "price": 18000
     },
     {
       "location": "Pyro > Pyro VI",
       "shop": "Megumi",
-      "price": 17159
+      "price": 17000
     },
     {
       "location": "Pyro > Monox",
       "shop": "Checkmate",
-      "price": 17159
+      "price": 17000
     },
     {
       "location": "Pyro > Terminus",
       "shop": "Ruin Station",
-      "price": 17159
+      "price": 17000
     },
     {
       "location": "Pyro > Bloom",
       "shop": "Orbituary",
-      "price": 17159
+      "price": 17000
     }
   ],
   "SLAM": [
     {
       "location": "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station",
       "shop": "CRU-L5 Maintenance",
-      "price": 48753
+      "price": 48000
     },
     {
       "location": "Stanton > ArcCorp > Wala",
       "shop": "Samson & Son's",
-      "price": 46516
+      "price": 46000
     },
     {
       "location": "Stanton > Crusader > Daymar",
       "shop": "Brio's Breaker",
-      "price": 46516
+      "price": 46000
     },
     {
       "location": "Stanton > MicroTech > Euterpe",
       "shop": "Devlin Scrap",
-      "price": 46516
+      "price": 46000
     },
     {
       "location": "Stanton > Hurston",
       "shop": "Reclamation Orinth",
-      "price": 46516
+      "price": 46000
     },
     {
       "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
       "shop": "CRU-L4 Locker",
-      "price": 46516
+      "price": 46000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Ashland",
-      "price": 39136
+      "price": 39000
     },
     {
       "location": "Pyro > Bloom",
       "shop": "The Golden Riviera",
-      "price": 39136
+      "price": 39000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Fallow Field",
-      "price": 37180
+      "price": 37000
     },
     {
       "location": "Pyro > Pyro VI",
       "shop": "Endgame",
-      "price": 36229
+      "price": 36000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Gaslight",
-      "price": 36229
+      "price": 36000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Rat's Nest",
-      "price": 36229
+      "price": 36000
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Rod's Fuel",
-      "price": 36229
+      "price": 36000
     },
     {
       "location": "Pyro > Pyro VI",
-      "shop": "Dudley and Daughters",
-      "price": 36229
+      "shop": "Dudley & Daughters",
+      "price": 36000
     },
     {
       "location": "Pyro > Bloom",
       "shop": "Patch City",
-      "price": 36229
+      "price": 36000
     },
     {
       "location": "Pyro > Bloom",
       "shop": "Starlight Service",
-      "price": 36229
+      "price": 36000
     },
     {
       "location": "Stanton > Crusader > Yela",
       "shop": "GrimHEX",
-      "price": 32203
+      "price": 32000
     }
   ],
   "WiDoW": [
     {
       "location": "Stanton > MicroTech > Euterpe",
       "shop": "Devlin Scrap",
-      "price": 9028
-    },
-    {
-      "location": "Pyro > Bloom",
-      "shop": "The Golden Riviera",
-      "price": 8602
-    },
-    {
-      "location": "Stanton > Crusader > Daymar",
-      "shop": "Brio's Breaker",
-      "price": 8517
+      "price": 9000
     },
     {
       "location": "Stanton > Hurston",
       "shop": "Reclamation Orinth",
-      "price": 8049
+      "price": 8000
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "The Golden Riviera",
+      "price": 7800
+    },
+    {
+      "location": "Stanton > Crusader > Daymar",
+      "shop": "Brio's Breaker",
+      "price": 7750
     },
     {
       "location": "Stanton > ArcCorp > Wala",
       "shop": "Samson & Son's",
-      "price": 7665
-    },
-    {
-      "location": "Pyro > Bloom",
-      "shop": "Starlight Service",
-      "price": 7665
+      "price": 7600
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Ashland",
-      "price": 7282
+      "price": 7200
     },
     {
       "location": "Stanton > Crusader > Yela",
       "shop": "GrimHEX",
-      "price": 7282
+      "price": 7200
+    },
+    {
+      "location": "Pyro > Bloom",
+      "shop": "Starlight Service",
+      "price": 7167
     },
     {
       "location": "Pyro > Pyro V",
       "shop": "Fallow Field",
-      "price": 6899
+      "price": 6800
     },
     {
       "location": "Stanton > CRU L4 > CRU-L4 Shallow Fields Station",
       "shop": "CRU-L4 Locker",
-      "price": 5749
+      "price": 5700
     }
   ]
 }
