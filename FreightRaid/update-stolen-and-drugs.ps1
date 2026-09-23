@@ -1,4 +1,12 @@
 Clear-Host
+<#
+    23/09/2026 :
+    - Added hot locatons : Ashland, Chawla's Beach, Golden Riviera
+    - Removed hot locations : Clusters
+    - Added commodities : Elespo, CK13, Stileron (only stolen), Savrilium (only stolen)
+    * don't miss to change your SC version for 4.10.1 in app parameters !
+#>
+
 
 function CapitalizeFirstLetter($s){
     if ($s.Length -lt 2) { return $s.ToUpper() }
@@ -23,7 +31,7 @@ $links = @{
     "Orbituary" = "Pyro > Bloom";
     "Fallow Field" = "Pyro > Pyro V";
     "Megumi" = "Pyro > Pyro VI";
-    "Dudley and Daughters" = "Pyro > Pyro VI";
+    "Dudley & Daughters" = "Pyro > Pyro VI";
     "CRU-L5 Maintenance" = "Stanton > CRU L5 > CRU-L5 Beautiful Glen Station";
     "The Golden Riviera" = "Pyro > Bloom";
     "Rat's Nest" = "Pyro > Pyro V";
@@ -47,16 +55,17 @@ $links = @{
 }
 
 
-$rep = (invoke-webrequest -Uri "")
+$rep = (invoke-webrequest -Uri "" -UseBasicParsing)
 
 # stolens
 $comnames = @(
-    <# "Amioshi Plague";
+    "Amioshi Plague";
     "Astatine";
     "Atlasium";
     "Bexalite";
     "Bioplastic";
     "Borase";
+    "CK13-GID Seed Blend";    
     "Cobalt";
     "Compboard";
     "Diamond";
@@ -70,19 +79,23 @@ $comnames = @(
     "Recycled material composite";
     "Taranite";
     "Thermalfoam";
-    "Tungsten"; #>
+    "Tungsten";     
+    "Savrilium";
+    "Stileron";
 )
 
 # drugs
+
 <# $comnames = @(
     "Altruciatoxin";
     "Distilled spirits";
     "E'tam";
+    "Elespo";
     "Gasping Weevil Eggs";
     "Maze";
     "Neon";
     "SLAM";
-    "WiDoW"; 
+    "WiDoW";    
 ) #>
 
 
@@ -126,5 +139,5 @@ foreach ($entry in $obj.GetEnumerator() | Sort-Object Name) {
 }
 
 
-$sortedResult | ConvertTo-Json -Depth 5
+$sortedResult | ConvertTo-Json -Depth 5 | Out-File -FilePath "$env:USERPROFILE\Downloads\stolen.txt"
 
